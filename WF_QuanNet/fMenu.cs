@@ -160,7 +160,7 @@ namespace WF_QuanNet
 
         private void quitBtn_Click(object sender, EventArgs e)
         {
-           // this.Close();
+           this.Close();
         }
 
         private void miniBtn_Click(object sender, EventArgs e)

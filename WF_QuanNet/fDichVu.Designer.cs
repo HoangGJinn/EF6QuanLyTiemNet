@@ -34,22 +34,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label13 = new System.Windows.Forms.Label();
-            this.hinhDUBtn = new WF_QuanNet.CustomComponent.CustomButton();
-            this.searchduBox = new WF_QuanNet.CustomComponent.CustomTextBox();
-            this.ttduCbBox = new WF_QuanNet.CustomComponent.CustomComboBox();
-            this.dubsCheckBox = new System.Windows.Forms.CheckBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.huyDUBtn = new WF_QuanNet.CustomComponent.CustomButton();
-            this.xoaDUBtn = new WF_QuanNet.CustomComponent.CustomButton();
-            this.suaDUBtn = new WF_QuanNet.CustomComponent.CustomButton();
-            this.themDUBtn = new WF_QuanNet.CustomComponent.CustomButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tenDoUongTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
+            this.customPanel6 = new WF_QuanNet.CustomComponent.CustomPanel();
             this.label12 = new System.Windows.Forms.Label();
             this.hinhDABtn = new WF_QuanNet.CustomComponent.CustomButton();
-            this.customPanel6 = new WF_QuanNet.CustomComponent.CustomPanel();
             this.picDA = new System.Windows.Forms.PictureBox();
             this.searchdaBtn = new System.Windows.Forms.PictureBox();
             this.searchdaBox = new WF_QuanNet.CustomComponent.CustomTextBox();
@@ -73,7 +60,6 @@
             this.themDABtn = new WF_QuanNet.CustomComponent.CustomButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customPanel4 = new WF_QuanNet.CustomComponent.CustomPanel();
             this.label14 = new System.Windows.Forms.Label();
             this.picTC = new System.Windows.Forms.PictureBox();
@@ -90,20 +76,34 @@
             this.customPanel5 = new WF_QuanNet.CustomComponent.CustomPanel();
             this.dgvTC = new System.Windows.Forms.DataGridView();
             this.MaDVTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaithe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menhgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menhGiaTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customPanel1 = new WF_QuanNet.CustomComponent.CustomPanel();
+            this.label13 = new System.Windows.Forms.Label();
             this.picDU = new System.Windows.Forms.PictureBox();
+            this.hinhDUBtn = new WF_QuanNet.CustomComponent.CustomButton();
             this.searchduBtn = new System.Windows.Forms.PictureBox();
+            this.searchduBox = new WF_QuanNet.CustomComponent.CustomTextBox();
+            this.ttduCbBox = new WF_QuanNet.CustomComponent.CustomComboBox();
+            this.dubsCheckBox = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.huyDUBtn = new WF_QuanNet.CustomComponent.CustomButton();
+            this.xoaDUBtn = new WF_QuanNet.CustomComponent.CustomButton();
+            this.suaDUBtn = new WF_QuanNet.CustomComponent.CustomButton();
+            this.themDUBtn = new WF_QuanNet.CustomComponent.CustomButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tenDoUongTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.customPanel2 = new WF_QuanNet.CustomComponent.CustomPanel();
             this.dgvDU = new System.Windows.Forms.DataGridView();
             this.MaDVDU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tendouong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dongiadouong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trangthaidouong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsdouong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgduTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -126,261 +126,6 @@
             this.customPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDU)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.FillWeight = 50F;
-            this.dataGridViewTextBoxColumn4.HeaderText = "BS";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("HarmonyOS Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(28, 593);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(52, 24);
-            this.label13.TabIndex = 69;
-            this.label13.Text = "Hình:";
-            // 
-            // hinhDUBtn
-            // 
-            this.hinhDUBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.hinhDUBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.hinhDUBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.hinhDUBtn.BorderRadius = 20;
-            this.hinhDUBtn.BorderSize = 2;
-            this.hinhDUBtn.FlatAppearance.BorderSize = 0;
-            this.hinhDUBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hinhDUBtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hinhDUBtn.ForeColor = System.Drawing.Color.White;
-            this.hinhDUBtn.Location = new System.Drawing.Point(187, 597);
-            this.hinhDUBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.hinhDUBtn.Name = "hinhDUBtn";
-            this.hinhDUBtn.Size = new System.Drawing.Size(95, 49);
-            this.hinhDUBtn.TabIndex = 61;
-            this.hinhDUBtn.Text = "Chọn";
-            this.hinhDUBtn.TextColor = System.Drawing.Color.White;
-            this.hinhDUBtn.UseVisualStyleBackColor = false;
-            // 
-            // searchduBox
-            // 
-            this.searchduBox.BackColor = System.Drawing.Color.White;
-            this.searchduBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.searchduBox.BorderFocusColor = System.Drawing.Color.MediumSlateBlue;
-            this.searchduBox.BorderRadius = 15;
-            this.searchduBox.BorderSize = 2;
-            this.searchduBox.Font = new System.Drawing.Font("HarmonyOS Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchduBox.Location = new System.Drawing.Point(236, 79);
-            this.searchduBox.Margin = new System.Windows.Forms.Padding(5);
-            this.searchduBox.Multiline = false;
-            this.searchduBox.Name = "searchduBox";
-            this.searchduBox.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
-            this.searchduBox.PasswordChar = false;
-            this.searchduBox.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.searchduBox.PlaceholderText = "Tìm kiếm";
-            this.searchduBox.Size = new System.Drawing.Size(228, 40);
-            this.searchduBox.TabIndex = 63;
-            this.searchduBox.Texts = "";
-            this.searchduBox.UnderlinedStyle = false;
-            // 
-            // ttduCbBox
-            // 
-            this.ttduCbBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ttduCbBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.ttduCbBox.BorderSize = 1;
-            this.ttduCbBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.ttduCbBox.Font = new System.Drawing.Font("HarmonyOS Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ttduCbBox.ForeColor = System.Drawing.Color.DimGray;
-            this.ttduCbBox.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.ttduCbBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.ttduCbBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.ttduCbBox.Location = new System.Drawing.Point(28, 686);
-            this.ttduCbBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ttduCbBox.MinimumSize = new System.Drawing.Size(200, 30);
-            this.ttduCbBox.Name = "ttduCbBox";
-            this.ttduCbBox.Padding = new System.Windows.Forms.Padding(1);
-            this.ttduCbBox.Size = new System.Drawing.Size(249, 39);
-            this.ttduCbBox.TabIndex = 61;
-            this.ttduCbBox.Texts = "";
-            this.ttduCbBox.Visible = false;
-            // 
-            // dubsCheckBox
-            // 
-            this.dubsCheckBox.AutoSize = true;
-            this.dubsCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.dubsCheckBox.Font = new System.Drawing.Font("HarmonyOS Sans", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dubsCheckBox.Location = new System.Drawing.Point(163, 442);
-            this.dubsCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dubsCheckBox.Name = "dubsCheckBox";
-            this.dubsCheckBox.Size = new System.Drawing.Size(103, 24);
-            this.dubsCheckBox.TabIndex = 60;
-            this.dubsCheckBox.Text = "Best seller";
-            this.dubsCheckBox.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("HarmonyOS Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(25, 658);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 24);
-            this.label10.TabIndex = 56;
-            this.label10.Text = "Trạng thái:";
-            this.label10.Visible = false;
-            // 
-            // huyDUBtn
-            // 
-            this.huyDUBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.huyDUBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.huyDUBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.huyDUBtn.BorderRadius = 20;
-            this.huyDUBtn.BorderSize = 2;
-            this.huyDUBtn.FlatAppearance.BorderSize = 0;
-            this.huyDUBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.huyDUBtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.huyDUBtn.ForeColor = System.Drawing.Color.White;
-            this.huyDUBtn.Location = new System.Drawing.Point(305, 630);
-            this.huyDUBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.huyDUBtn.Name = "huyDUBtn";
-            this.huyDUBtn.Size = new System.Drawing.Size(137, 49);
-            this.huyDUBtn.TabIndex = 54;
-            this.huyDUBtn.Text = "Hủy";
-            this.huyDUBtn.TextColor = System.Drawing.Color.White;
-            this.huyDUBtn.UseVisualStyleBackColor = false;
-            this.huyDUBtn.Visible = false;
-            // 
-            // xoaDUBtn
-            // 
-            this.xoaDUBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.xoaDUBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.xoaDUBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.xoaDUBtn.BorderRadius = 20;
-            this.xoaDUBtn.BorderSize = 2;
-            this.xoaDUBtn.FlatAppearance.BorderSize = 0;
-            this.xoaDUBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.xoaDUBtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xoaDUBtn.ForeColor = System.Drawing.Color.White;
-            this.xoaDUBtn.Location = new System.Drawing.Point(305, 567);
-            this.xoaDUBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.xoaDUBtn.Name = "xoaDUBtn";
-            this.xoaDUBtn.Size = new System.Drawing.Size(137, 49);
-            this.xoaDUBtn.TabIndex = 53;
-            this.xoaDUBtn.Text = "Xóa";
-            this.xoaDUBtn.TextColor = System.Drawing.Color.White;
-            this.xoaDUBtn.UseVisualStyleBackColor = false;
-            this.xoaDUBtn.Visible = false;
-            // 
-            // suaDUBtn
-            // 
-            this.suaDUBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.suaDUBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.suaDUBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.suaDUBtn.BorderRadius = 20;
-            this.suaDUBtn.BorderSize = 2;
-            this.suaDUBtn.FlatAppearance.BorderSize = 0;
-            this.suaDUBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.suaDUBtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.suaDUBtn.ForeColor = System.Drawing.Color.White;
-            this.suaDUBtn.Location = new System.Drawing.Point(305, 505);
-            this.suaDUBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.suaDUBtn.Name = "suaDUBtn";
-            this.suaDUBtn.Size = new System.Drawing.Size(137, 49);
-            this.suaDUBtn.TabIndex = 51;
-            this.suaDUBtn.Text = "Cập Nhật";
-            this.suaDUBtn.TextColor = System.Drawing.Color.White;
-            this.suaDUBtn.UseVisualStyleBackColor = false;
-            this.suaDUBtn.Visible = false;
-            // 
-            // themDUBtn
-            // 
-            this.themDUBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.themDUBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.themDUBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.themDUBtn.BorderRadius = 20;
-            this.themDUBtn.BorderSize = 2;
-            this.themDUBtn.FlatAppearance.BorderSize = 0;
-            this.themDUBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.themDUBtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.themDUBtn.ForeColor = System.Drawing.Color.White;
-            this.themDUBtn.Location = new System.Drawing.Point(305, 443);
-            this.themDUBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.themDUBtn.Name = "themDUBtn";
-            this.themDUBtn.Size = new System.Drawing.Size(137, 49);
-            this.themDUBtn.TabIndex = 52;
-            this.themDUBtn.Text = "Thêm";
-            this.themDUBtn.TextColor = System.Drawing.Color.White;
-            this.themDUBtn.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Be Vietnam Pro SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(3, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(217, 38);
-            this.label2.TabIndex = 36;
-            this.label2.Text = "Dịch vụ đồ uống";
-            // 
-            // tenDoUongTxtBox
-            // 
-            this.tenDoUongTxtBox.BackColor = System.Drawing.Color.White;
-            this.tenDoUongTxtBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.tenDoUongTxtBox.BorderFocusColor = System.Drawing.Color.MediumSlateBlue;
-            this.tenDoUongTxtBox.BorderRadius = 15;
-            this.tenDoUongTxtBox.BorderSize = 2;
-            this.tenDoUongTxtBox.Font = new System.Drawing.Font("HarmonyOS Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenDoUongTxtBox.Location = new System.Drawing.Point(31, 468);
-            this.tenDoUongTxtBox.Margin = new System.Windows.Forms.Padding(5);
-            this.tenDoUongTxtBox.Multiline = false;
-            this.tenDoUongTxtBox.Name = "tenDoUongTxtBox";
-            this.tenDoUongTxtBox.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
-            this.tenDoUongTxtBox.PasswordChar = false;
-            this.tenDoUongTxtBox.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tenDoUongTxtBox.PlaceholderText = "Nhập tên đồ uống";
-            this.tenDoUongTxtBox.Size = new System.Drawing.Size(251, 39);
-            this.tenDoUongTxtBox.TabIndex = 37;
-            this.tenDoUongTxtBox.Texts = "";
-            this.tenDoUongTxtBox.UnderlinedStyle = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("HarmonyOS Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(33, 593);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 24);
-            this.label12.TabIndex = 68;
-            this.label12.Text = "Hình:";
-            // 
-            // hinhDABtn
-            // 
-            this.hinhDABtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.hinhDABtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.hinhDABtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.hinhDABtn.BorderRadius = 20;
-            this.hinhDABtn.BorderSize = 2;
-            this.hinhDABtn.FlatAppearance.BorderSize = 0;
-            this.hinhDABtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hinhDABtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hinhDABtn.ForeColor = System.Drawing.Color.White;
-            this.hinhDABtn.Location = new System.Drawing.Point(188, 597);
-            this.hinhDABtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.hinhDABtn.Name = "hinhDABtn";
-            this.hinhDABtn.Size = new System.Drawing.Size(95, 49);
-            this.hinhDABtn.TabIndex = 67;
-            this.hinhDABtn.Text = "Chọn";
-            this.hinhDABtn.TextColor = System.Drawing.Color.White;
-            this.hinhDABtn.UseVisualStyleBackColor = false;
-            this.hinhDABtn.Click += new System.EventHandler(this.hinhDABtn_Click_1);
             // 
             // customPanel6
             // 
@@ -415,6 +160,38 @@
             this.customPanel6.Size = new System.Drawing.Size(469, 734);
             this.customPanel6.TabIndex = 53;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("HarmonyOS Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(33, 593);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(52, 24);
+            this.label12.TabIndex = 68;
+            this.label12.Text = "Hình:";
+            // 
+            // hinhDABtn
+            // 
+            this.hinhDABtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.hinhDABtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.hinhDABtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.hinhDABtn.BorderRadius = 20;
+            this.hinhDABtn.BorderSize = 2;
+            this.hinhDABtn.FlatAppearance.BorderSize = 0;
+            this.hinhDABtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hinhDABtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hinhDABtn.ForeColor = System.Drawing.Color.White;
+            this.hinhDABtn.Location = new System.Drawing.Point(188, 597);
+            this.hinhDABtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.hinhDABtn.Name = "hinhDABtn";
+            this.hinhDABtn.Size = new System.Drawing.Size(95, 49);
+            this.hinhDABtn.TabIndex = 67;
+            this.hinhDABtn.Text = "Chọn";
+            this.hinhDABtn.TextColor = System.Drawing.Color.White;
+            this.hinhDABtn.UseVisualStyleBackColor = false;
+            this.hinhDABtn.Click += new System.EventHandler(this.hinhDABtn_Click_1);
+            // 
             // picDA
             // 
             this.picDA.Location = new System.Drawing.Point(100, 593);
@@ -436,6 +213,7 @@
             this.searchdaBtn.Size = new System.Drawing.Size(32, 30);
             this.searchdaBtn.TabIndex = 61;
             this.searchdaBtn.TabStop = false;
+            this.searchdaBtn.Click += new System.EventHandler(this.searchdaBtn_Click);
             // 
             // searchdaBox
             // 
@@ -512,6 +290,7 @@
             this.huyDABtn.TextColor = System.Drawing.Color.White;
             this.huyDABtn.UseVisualStyleBackColor = false;
             this.huyDABtn.Visible = false;
+            this.huyDABtn.Click += new System.EventHandler(this.huyDABtn_Click);
             // 
             // label11
             // 
@@ -545,6 +324,7 @@
             this.xoaDABtn.TextColor = System.Drawing.Color.White;
             this.xoaDABtn.UseVisualStyleBackColor = false;
             this.xoaDABtn.Visible = false;
+            this.xoaDABtn.Click += new System.EventHandler(this.xoaDABtn_Click);
             // 
             // label1
             // 
@@ -578,6 +358,7 @@
             this.suaDABtn.TextColor = System.Drawing.Color.White;
             this.suaDABtn.UseVisualStyleBackColor = false;
             this.suaDABtn.Visible = false;
+            this.suaDABtn.Click += new System.EventHandler(this.suaDABtn_Click);
             // 
             // tenDoAnTxtBox
             // 
@@ -765,6 +546,7 @@
             this.themDABtn.Text = "Thêm";
             this.themDABtn.TextColor = System.Drawing.Color.White;
             this.themDABtn.UseVisualStyleBackColor = false;
+            this.themDABtn.Click += new System.EventHandler(this.themDABtn_Click);
             // 
             // label6
             // 
@@ -787,16 +569,6 @@
             this.label7.Size = new System.Drawing.Size(79, 24);
             this.label7.TabIndex = 44;
             this.label7.Text = "Đơn giá:";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.FillWeight = 94.19404F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Trạng Thái";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // customPanel4
             // 
@@ -868,6 +640,7 @@
             this.hinhTCBtn.Text = "Chọn";
             this.hinhTCBtn.TextColor = System.Drawing.Color.White;
             this.hinhTCBtn.UseVisualStyleBackColor = false;
+            this.hinhTCBtn.Click += new System.EventHandler(this.hinhTCBtn_Click);
             // 
             // searchtcBtn
             // 
@@ -880,6 +653,7 @@
             this.searchtcBtn.Size = new System.Drawing.Size(32, 30);
             this.searchtcBtn.TabIndex = 57;
             this.searchtcBtn.TabStop = false;
+            this.searchtcBtn.Click += new System.EventHandler(this.searchtcBtn_Click_1);
             // 
             // searchtcBox
             // 
@@ -922,6 +696,7 @@
             this.huyTCBtn.TextColor = System.Drawing.Color.White;
             this.huyTCBtn.UseVisualStyleBackColor = false;
             this.huyTCBtn.Visible = false;
+            this.huyTCBtn.Click += new System.EventHandler(this.huyTCBtn_Click);
             // 
             // xoaTCBtn
             // 
@@ -943,6 +718,7 @@
             this.xoaTCBtn.TextColor = System.Drawing.Color.White;
             this.xoaTCBtn.UseVisualStyleBackColor = false;
             this.xoaTCBtn.Visible = false;
+            this.xoaTCBtn.Click += new System.EventHandler(this.xoaTCBtn_Click);
             // 
             // suaTCBtn
             // 
@@ -964,6 +740,7 @@
             this.suaTCBtn.TextColor = System.Drawing.Color.White;
             this.suaTCBtn.UseVisualStyleBackColor = false;
             this.suaTCBtn.Visible = false;
+            this.suaTCBtn.Click += new System.EventHandler(this.suaTCBtn_Click);
             // 
             // label5
             // 
@@ -1067,8 +844,8 @@
             this.dgvTC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvTC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaDVTC,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
+            this.loaithe,
+            this.menhgia});
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("HarmonyOS Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1091,6 +868,7 @@
             this.dgvTC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTC.Size = new System.Drawing.Size(329, 295);
             this.dgvTC.TabIndex = 0;
+            this.dgvTC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTC_CellContentClick);
             // 
             // MaDVTC
             // 
@@ -1101,23 +879,23 @@
             this.MaDVTC.Visible = false;
             this.MaDVTC.Width = 125;
             // 
-            // dataGridViewTextBoxColumn5
+            // loaithe
             // 
-            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Loại Thẻ";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.loaithe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.loaithe.HeaderText = "Loại Thẻ";
+            this.loaithe.MinimumWidth = 6;
+            this.loaithe.Name = "loaithe";
+            this.loaithe.ReadOnly = true;
+            this.loaithe.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // dataGridViewTextBoxColumn6
+            // menhgia
             // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Mệnh Giá";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.menhgia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.menhgia.HeaderText = "Mệnh Giá";
+            this.menhgia.MinimumWidth = 6;
+            this.menhgia.Name = "menhgia";
+            this.menhgia.ReadOnly = true;
+            this.menhgia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // menhGiaTxtBox
             // 
@@ -1162,16 +940,6 @@
             this.label9.TabIndex = 44;
             this.label9.Text = "Mệnh giá:";
             // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.FillWeight = 94.19404F;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Đơn Giá";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
             // customPanel1
             // 
             this.customPanel1.BackColor = System.Drawing.SystemColors.Window;
@@ -1205,6 +973,17 @@
             this.customPanel1.Size = new System.Drawing.Size(469, 734);
             this.customPanel1.TabIndex = 54;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("HarmonyOS Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(28, 593);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(52, 24);
+            this.label13.TabIndex = 69;
+            this.label13.Text = "Hình:";
+            // 
             // picDU
             // 
             this.picDU.Location = new System.Drawing.Point(96, 593);
@@ -1214,6 +993,27 @@
             this.picDU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picDU.TabIndex = 66;
             this.picDU.TabStop = false;
+            // 
+            // hinhDUBtn
+            // 
+            this.hinhDUBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.hinhDUBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.hinhDUBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.hinhDUBtn.BorderRadius = 20;
+            this.hinhDUBtn.BorderSize = 2;
+            this.hinhDUBtn.FlatAppearance.BorderSize = 0;
+            this.hinhDUBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hinhDUBtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hinhDUBtn.ForeColor = System.Drawing.Color.White;
+            this.hinhDUBtn.Location = new System.Drawing.Point(187, 597);
+            this.hinhDUBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.hinhDUBtn.Name = "hinhDUBtn";
+            this.hinhDUBtn.Size = new System.Drawing.Size(95, 49);
+            this.hinhDUBtn.TabIndex = 61;
+            this.hinhDUBtn.Text = "Chọn";
+            this.hinhDUBtn.TextColor = System.Drawing.Color.White;
+            this.hinhDUBtn.UseVisualStyleBackColor = false;
+            this.hinhDUBtn.Click += new System.EventHandler(this.hinhDUBtn_Click);
             // 
             // searchduBtn
             // 
@@ -1226,6 +1026,194 @@
             this.searchduBtn.Size = new System.Drawing.Size(32, 30);
             this.searchduBtn.TabIndex = 62;
             this.searchduBtn.TabStop = false;
+            this.searchduBtn.Click += new System.EventHandler(this.searchduBtn_Click);
+            // 
+            // searchduBox
+            // 
+            this.searchduBox.BackColor = System.Drawing.Color.White;
+            this.searchduBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.searchduBox.BorderFocusColor = System.Drawing.Color.MediumSlateBlue;
+            this.searchduBox.BorderRadius = 15;
+            this.searchduBox.BorderSize = 2;
+            this.searchduBox.Font = new System.Drawing.Font("HarmonyOS Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchduBox.Location = new System.Drawing.Point(236, 79);
+            this.searchduBox.Margin = new System.Windows.Forms.Padding(5);
+            this.searchduBox.Multiline = false;
+            this.searchduBox.Name = "searchduBox";
+            this.searchduBox.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
+            this.searchduBox.PasswordChar = false;
+            this.searchduBox.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.searchduBox.PlaceholderText = "Tìm kiếm";
+            this.searchduBox.Size = new System.Drawing.Size(228, 40);
+            this.searchduBox.TabIndex = 63;
+            this.searchduBox.Texts = "";
+            this.searchduBox.UnderlinedStyle = false;
+            // 
+            // ttduCbBox
+            // 
+            this.ttduCbBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ttduCbBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.ttduCbBox.BorderSize = 1;
+            this.ttduCbBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.ttduCbBox.Font = new System.Drawing.Font("HarmonyOS Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ttduCbBox.ForeColor = System.Drawing.Color.DimGray;
+            this.ttduCbBox.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.ttduCbBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.ttduCbBox.ListTextColor = System.Drawing.Color.DimGray;
+            this.ttduCbBox.Location = new System.Drawing.Point(28, 686);
+            this.ttduCbBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ttduCbBox.MinimumSize = new System.Drawing.Size(200, 30);
+            this.ttduCbBox.Name = "ttduCbBox";
+            this.ttduCbBox.Padding = new System.Windows.Forms.Padding(1);
+            this.ttduCbBox.Size = new System.Drawing.Size(249, 39);
+            this.ttduCbBox.TabIndex = 61;
+            this.ttduCbBox.Texts = "";
+            this.ttduCbBox.Visible = false;
+            // 
+            // dubsCheckBox
+            // 
+            this.dubsCheckBox.AutoSize = true;
+            this.dubsCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.dubsCheckBox.Font = new System.Drawing.Font("HarmonyOS Sans", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dubsCheckBox.Location = new System.Drawing.Point(163, 442);
+            this.dubsCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dubsCheckBox.Name = "dubsCheckBox";
+            this.dubsCheckBox.Size = new System.Drawing.Size(103, 24);
+            this.dubsCheckBox.TabIndex = 60;
+            this.dubsCheckBox.Text = "Best seller";
+            this.dubsCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("HarmonyOS Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(25, 658);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(96, 24);
+            this.label10.TabIndex = 56;
+            this.label10.Text = "Trạng thái:";
+            this.label10.Visible = false;
+            // 
+            // huyDUBtn
+            // 
+            this.huyDUBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.huyDUBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.huyDUBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.huyDUBtn.BorderRadius = 20;
+            this.huyDUBtn.BorderSize = 2;
+            this.huyDUBtn.FlatAppearance.BorderSize = 0;
+            this.huyDUBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.huyDUBtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.huyDUBtn.ForeColor = System.Drawing.Color.White;
+            this.huyDUBtn.Location = new System.Drawing.Point(305, 630);
+            this.huyDUBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.huyDUBtn.Name = "huyDUBtn";
+            this.huyDUBtn.Size = new System.Drawing.Size(137, 49);
+            this.huyDUBtn.TabIndex = 54;
+            this.huyDUBtn.Text = "Hủy";
+            this.huyDUBtn.TextColor = System.Drawing.Color.White;
+            this.huyDUBtn.UseVisualStyleBackColor = false;
+            this.huyDUBtn.Visible = false;
+            this.huyDUBtn.Click += new System.EventHandler(this.huyDUBtn_Click);
+            // 
+            // xoaDUBtn
+            // 
+            this.xoaDUBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.xoaDUBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.xoaDUBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.xoaDUBtn.BorderRadius = 20;
+            this.xoaDUBtn.BorderSize = 2;
+            this.xoaDUBtn.FlatAppearance.BorderSize = 0;
+            this.xoaDUBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.xoaDUBtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xoaDUBtn.ForeColor = System.Drawing.Color.White;
+            this.xoaDUBtn.Location = new System.Drawing.Point(305, 567);
+            this.xoaDUBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.xoaDUBtn.Name = "xoaDUBtn";
+            this.xoaDUBtn.Size = new System.Drawing.Size(137, 49);
+            this.xoaDUBtn.TabIndex = 53;
+            this.xoaDUBtn.Text = "Xóa";
+            this.xoaDUBtn.TextColor = System.Drawing.Color.White;
+            this.xoaDUBtn.UseVisualStyleBackColor = false;
+            this.xoaDUBtn.Visible = false;
+            this.xoaDUBtn.Click += new System.EventHandler(this.xoaDUBtn_Click);
+            // 
+            // suaDUBtn
+            // 
+            this.suaDUBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.suaDUBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.suaDUBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.suaDUBtn.BorderRadius = 20;
+            this.suaDUBtn.BorderSize = 2;
+            this.suaDUBtn.FlatAppearance.BorderSize = 0;
+            this.suaDUBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.suaDUBtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.suaDUBtn.ForeColor = System.Drawing.Color.White;
+            this.suaDUBtn.Location = new System.Drawing.Point(305, 505);
+            this.suaDUBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.suaDUBtn.Name = "suaDUBtn";
+            this.suaDUBtn.Size = new System.Drawing.Size(137, 49);
+            this.suaDUBtn.TabIndex = 51;
+            this.suaDUBtn.Text = "Cập Nhật";
+            this.suaDUBtn.TextColor = System.Drawing.Color.White;
+            this.suaDUBtn.UseVisualStyleBackColor = false;
+            this.suaDUBtn.Visible = false;
+            this.suaDUBtn.Click += new System.EventHandler(this.suaDUBtn_Click);
+            // 
+            // themDUBtn
+            // 
+            this.themDUBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.themDUBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.themDUBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.themDUBtn.BorderRadius = 20;
+            this.themDUBtn.BorderSize = 2;
+            this.themDUBtn.FlatAppearance.BorderSize = 0;
+            this.themDUBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.themDUBtn.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.themDUBtn.ForeColor = System.Drawing.Color.White;
+            this.themDUBtn.Location = new System.Drawing.Point(305, 443);
+            this.themDUBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.themDUBtn.Name = "themDUBtn";
+            this.themDUBtn.Size = new System.Drawing.Size(137, 49);
+            this.themDUBtn.TabIndex = 52;
+            this.themDUBtn.Text = "Thêm";
+            this.themDUBtn.TextColor = System.Drawing.Color.White;
+            this.themDUBtn.UseVisualStyleBackColor = false;
+            this.themDUBtn.Click += new System.EventHandler(this.themDUBtn_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Be Vietnam Pro SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(3, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(217, 38);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Dịch vụ đồ uống";
+            // 
+            // tenDoUongTxtBox
+            // 
+            this.tenDoUongTxtBox.BackColor = System.Drawing.Color.White;
+            this.tenDoUongTxtBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.tenDoUongTxtBox.BorderFocusColor = System.Drawing.Color.MediumSlateBlue;
+            this.tenDoUongTxtBox.BorderRadius = 15;
+            this.tenDoUongTxtBox.BorderSize = 2;
+            this.tenDoUongTxtBox.Font = new System.Drawing.Font("HarmonyOS Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenDoUongTxtBox.Location = new System.Drawing.Point(31, 468);
+            this.tenDoUongTxtBox.Margin = new System.Windows.Forms.Padding(5);
+            this.tenDoUongTxtBox.Multiline = false;
+            this.tenDoUongTxtBox.Name = "tenDoUongTxtBox";
+            this.tenDoUongTxtBox.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
+            this.tenDoUongTxtBox.PasswordChar = false;
+            this.tenDoUongTxtBox.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tenDoUongTxtBox.PlaceholderText = "Nhập tên đồ uống";
+            this.tenDoUongTxtBox.Size = new System.Drawing.Size(251, 39);
+            this.tenDoUongTxtBox.TabIndex = 37;
+            this.tenDoUongTxtBox.Texts = "";
+            this.tenDoUongTxtBox.UnderlinedStyle = false;
             // 
             // pictureBox1
             // 
@@ -1276,10 +1264,10 @@
             this.dgvDU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvDU.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaDVDU,
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
+            this.tendouong,
+            this.dongiadouong,
+            this.trangthaidouong,
+            this.bsdouong});
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("HarmonyOS Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1302,6 +1290,7 @@
             this.dgvDU.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDU.Size = new System.Drawing.Size(459, 295);
             this.dgvDU.TabIndex = 0;
+            this.dgvDU.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDU_CellContentClick);
             // 
             // MaDVDU
             // 
@@ -1312,15 +1301,44 @@
             this.MaDVDU.Visible = false;
             this.MaDVDU.Width = 125;
             // 
-            // dataGridViewTextBoxColumn1
+            // tendouong
             // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.FillWeight = 141.2911F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Tên Đồ Ăn";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.tendouong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tendouong.FillWeight = 141.2911F;
+            this.tendouong.HeaderText = "Tên Đồ Ăn";
+            this.tendouong.MinimumWidth = 6;
+            this.tendouong.Name = "tendouong";
+            this.tendouong.ReadOnly = true;
+            this.tendouong.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dongiadouong
+            // 
+            this.dongiadouong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dongiadouong.FillWeight = 94.19404F;
+            this.dongiadouong.HeaderText = "Đơn Giá";
+            this.dongiadouong.MinimumWidth = 6;
+            this.dongiadouong.Name = "dongiadouong";
+            this.dongiadouong.ReadOnly = true;
+            this.dongiadouong.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // trangthaidouong
+            // 
+            this.trangthaidouong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.trangthaidouong.FillWeight = 94.19404F;
+            this.trangthaidouong.HeaderText = "Trạng Thái";
+            this.trangthaidouong.MinimumWidth = 6;
+            this.trangthaidouong.Name = "trangthaidouong";
+            this.trangthaidouong.ReadOnly = true;
+            this.trangthaidouong.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // bsdouong
+            // 
+            this.bsdouong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.bsdouong.FillWeight = 50F;
+            this.bsdouong.HeaderText = "BS";
+            this.bsdouong.MinimumWidth = 6;
+            this.bsdouong.Name = "bsdouong";
+            this.bsdouong.ReadOnly = true;
             // 
             // dgduTxtBox
             // 
@@ -1403,8 +1421,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox picDU;
         private CustomComponent.CustomButton hinhDUBtn;
@@ -1440,7 +1456,6 @@
         private CustomComponent.CustomButton themDABtn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private CustomComponent.CustomPanel customPanel4;
         private System.Windows.Forms.Label label14;
@@ -1457,18 +1472,12 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private CustomComponent.CustomPanel customPanel5;
         private System.Windows.Forms.DataGridView dgvTC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaDVTC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private CustomComponent.CustomTextBox menhGiaTxtBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private CustomComponent.CustomPanel customPanel1;
         private CustomComponent.CustomPanel customPanel2;
         private System.Windows.Forms.DataGridView dgvDU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaDVDU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private CustomComponent.CustomTextBox dgduTxtBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -1477,5 +1486,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dongia;
         private System.Windows.Forms.DataGridViewTextBoxColumn trangthai;
         private System.Windows.Forms.DataGridViewTextBoxColumn BS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaDVDU;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tendouong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dongiadouong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn trangthaidouong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bsdouong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaDVTC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loaithe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn menhgia;
     }
 }
