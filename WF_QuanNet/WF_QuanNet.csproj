@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD5A176F-8690-451D-8025-FBBD8283FEC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WF_QuanNet</RootNamespace>
+    <AssemblyName>WF_QuanNet</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="customcomponent\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customcomponent\CustomComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customcomponent\CustomeDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customcomponent\CustomFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customcomponent\CustomPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customcomponent\CustomTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customcomponent\CustomTextBox.Designer.cs">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customcomponent\fBlur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customcomponent\fBlur.Designer.cs">
+      <DependentUpon>fBlur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customcomponent\UcDV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customcomponent\UcDV.Designer.cs">
+      <DependentUpon>UcDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customcomponent\UcHD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customcomponent\UcHD.Designer.cs">
+      <DependentUpon>UcHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customcomponent\UcLk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customcomponent\UcLk.Designer.cs">
+      <DependentUpon>UcLk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customcomponent\UcMayTinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customcomponent\UcMayTinh.Designer.cs">
+      <DependentUpon>UcMayTinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMenu.Designer.cs">
+      <DependentUpon>fMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhanVien.Designer.cs">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="customcomponent\CustomTextBox.resx">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customcomponent\fBlur.resx">
+      <DependentUpon>fBlur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customcomponent\UcDV.resx">
+      <DependentUpon>UcDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customcomponent\UcHD.resx">
+      <DependentUpon>UcHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customcomponent\UcLk.resx">
+      <DependentUpon>UcLk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customcomponent\UcMayTinh.resx">
+      <DependentUpon>UcMayTinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMenu.resx">
+      <DependentUpon>fMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNhanVien.resx">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\7up.png" />
+    <Content Include="images\Bánh cuốn.png" />
+    <Content Include="images\Bánh mì chảo.png" />
+    <Content Include="images\Bánh mì trứng.png" />
+    <Content Include="images\Bánh đa cua.png" />
+    <Content Include="images\Bún bò.png" />
+    <Content Include="images\Bún chả.jpg" />
+    <Content Include="images\Bún riêu.jpg" />
+    <Content Include="images\Bạc xỉu.png" />
+    <Content Include="images\Cafe sữa.png" />
+    <Content Include="images\Cafe đen.png" />
+    <Content Include="images\Cháo sườn.jpg" />
+    <Content Include="images\Coca Cola.png" />
+    <Content Include="images\Cơm chiên dương châu.png" />
+    <Content Include="images\Cơm gà.png" />
+    <Content Include="images\Cơm rang thập cẩm.png" />
+    <Content Include="images\Cơm sườn.png" />
+    <Content Include="images\Cơm tấm.png" />
+    <Content Include="images\Garena 100K.jpg" />
+    <Content Include="images\Garena 200K.jpg" />
+    <Content Include="images\Garena 20K.jpg" />
+    <Content Include="images\Garena 500K.jpg" />
+    <Content Include="images\Garena 50K.jpg" />
+    <Content Include="images\Gà rán.png" />
+    <Content Include="images\Hamburger.png" />
+    <Content Include="images\Hủ tiếu.jpg" />
+    <Content Include="images\Khoai tây chiên.png" />
+    <Content Include="images\Milo đá.png" />
+    <Content Include="images\Mirinda soda kem.png" />
+    <Content Include="images\Mirinda xá xị.png" />
+    <Content Include="images\Miến gà.png" />
+    <Content Include="images\Mobifone 100K.jpg" />
+    <Content Include="images\Mobifone 200K.jpg" />
+    <Content Include="images\Mobifone 20K.jpg" />
+    <Content Include="images\Mobifone 500K.jpg" />
+    <Content Include="images\Mobifone 50K.jpg" />
+    <Content Include="images\Mì trộn.png" />
+    <Content Include="images\Mì xào.png" />
+    <Content Include="images\Mì ý.png" />
+    <Content Include="images\Nước cam.png" />
+    <Content Include="images\Nước lọc.png" />
+    <Content Include="images\Nước ép cà rốt.png" />
+    <Content Include="images\Nước ép dưa hấu.png" />
+    <Content Include="images\Pepsi.png" />
+    <Content Include="images\Sinh tố bơ.png" />
+    <Content Include="images\Sinh tố dâu.png" />
+    <Content Include="images\Sinh tố xoài.png" />
+    <Content Include="images\Soda chanh.png" />
+    <Content Include="images\Sting dâu.png" />
+    <Content Include="images\Sting vàng.png" />
+    <Content Include="images\Sữa tươi trân châu đường đen.png" />
+    <Content Include="images\Trà chanh.png" />
+    <Content Include="images\Trà sữa khoai môn.png" />
+    <Content Include="images\Trà sữa matcha.png" />
+    <Content Include="images\Trà sữa.png" />
+    <Content Include="images\Trà vải.png" />
+    <Content Include="images\Trà đào cam sả.png" />
+    <Content Include="images\Viettel 100K.jpg" />
+    <Content Include="images\Viettel 200K.jpg" />
+    <Content Include="images\Viettel 20K.jpg" />
+    <Content Include="images\Viettel 500K.jpg" />
+    <Content Include="images\Viettel 50K.jpg" />
+    <Content Include="images\Vinaphone 100K.jpg" />
+    <Content Include="images\Vinaphone 200K.jpg" />
+    <Content Include="images\Vinaphone 20K.jpg" />
+    <Content Include="images\Vinaphone 500K.jpg" />
+    <Content Include="images\Vinaphone 50K.jpg" />
+    <Content Include="images\Warrior dâu.png" />
+    <Content Include="images\Warrior nho.png" />
+    <Content Include="images\Xôi gà.jpg" />
+    <Content Include="images\Xôi pate trứng.png" />
+    <Content Include="resources\bill.png" />
+    <Content Include="resources\calendar.png" />
+    <Content Include="resources\calendarDark.png" />
+    <Content Include="resources\calendarWhite.png" />
+    <Content Include="resources\certficate.png" />
+    <Content Include="resources\certificate2.png" />
+    <Content Include="resources\check %281%29.png" />
+    <Content Include="resources\check.png" />
+    <Content Include="resources\close-button.png" />
+    <Content Include="resources\close.png" />
+    <Content Include="resources\cross.png" />
+    <Content Include="resources\dashboard.png" />
+    <Content Include="resources\delete.png" />
+    <Content Include="resources\desktop-computer.png" />
+    <Content Include="resources\direction.png" />
+    <Content Include="resources\discount-tag.png" />
+    <Content Include="resources\dollar.png" />
+    <Content Include="resources\down.png" />
+    <Content Include="resources\dv.png" />
+    <Content Include="resources\exclamation-mark.png" />
+    <Content Include="resources\exit.png" />
+    <Content Include="resources\expand-button.png" />
+    <Content Include="resources\hide.png" />
+    <Content Include="resources\increase.png" />
+    <Content Include="resources\key1.png" />
+    <Content Include="resources\loginpage.jpeg" />
+    <Content Include="resources\medal.png" />
+    <Content Include="resources\minimize.png" />
+    <Content Include="resources\money.png" />
+    <Content Include="resources\monitor %281%29.png" />
+    <Content Include="resources\monitor.png" />
+    <Content Include="resources\mt.png" />
+    <Content Include="resources\promo-code.png" />
+    <Content Include="resources\promo.png" />
+    <Content Include="resources\promo2.png" />
+    <Content Include="resources\promotion.png" />
+    <Content Include="resources\qr.jpg" />
+    <Content Include="resources\qr1.png" />
+    <Content Include="resources\search.png" />
+    <Content Include="resources\show.png" />
+    <Content Include="resources\up.png" />
+    <Content Include="resources\user %285%29.png" />
+    <Content Include="resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{e40a096e-a0d5-49df-9f3e-ec1c17429562}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{fe8340c3-e444-4b77-9276-2e7c06eb146b}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+</Project>

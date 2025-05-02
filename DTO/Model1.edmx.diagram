@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="37d603edb2d74ea9a69fb5b1285b0d03" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.CHITIETDV" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.DICHVU" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.DVDOAN" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.DVDOUONG" Width="1.5" PointX="5.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.DVTHECAO" Width="1.5" PointX="5.25" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.HOADON" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.KHUYENMAI" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.LINHKIEN" Width="1.5" PointX="3.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.LOAIKM" Width="1.5" PointX="1.5" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.LOAIMAY" Width="1.5" PointX="1.5" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.MAYTINH" Width="1.5" PointX="3.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.TAIKHOAN" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.CHITIETSUDUNG" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.DanhSachKhuyenMai" Width="1.5" PointX="7.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.DanhSachLoaiKhuyenMai" Width="1.5" PointX="7.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.DanhSachLoaiMay" Width="1.5" PointX="8.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.DanhSachMayTinh" Width="1.5" PointX="9.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.DanhSachNhanVien" Width="1.5" PointX="9.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.DanhSachTaiKhoan" Width="1.5" PointX="10.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.Top5DoAn" Width="1.5" PointX="7.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.Top5DoAnItNhat" Width="1.5" PointX="9.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.Top5DoUong" Width="1.5" PointX="11.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.Top5DoUongItNhat" Width="1.5" PointX="11.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.View_DichVuDoAn" Width="1.5" PointX="11.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.View_DichVuDoUong" Width="1.5" PointX="12.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTiemNetModel.View_DichVuTheCao" Width="1.5" PointX="11.75" PointY="13.875" IsExpanded="true" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__CHITIETDV__MaDV__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__CHITIETDV__MaHD__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__DVDOAN__MaDV__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__DVDOUONG__MaDV__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__DVTHECAO__MaDV__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__HOADON__MaKM__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__HOADON__MaNV__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__HOADON__TenDangN__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__KHUYENMAI__MaLoa__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__LINHKIEN__MaLoai__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__MAYTINH__MaLoaiM__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__CHITIETSU__SoMay__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTiemNetModel.FK__CHITIETSU__TenDa__48CFD27E" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
