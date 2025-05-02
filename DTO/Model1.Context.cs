@@ -17,6 +17,17 @@ namespace DTO
     
     public partial class QuanLyTiemNetEntities : DbContext
     {
+        private static QuanLyTiemNetEntities instance;
+        public static QuanLyTiemNetEntities Instance
+        {
+            get
+            {
+                if (instance == null) instance = new QuanLyTiemNetEntities();
+                return instance;
+            }
+            set
+            { instance = value; }
+        }
         public QuanLyTiemNetEntities()
             : base("name=QuanLyTiemNetEntities")
         {
