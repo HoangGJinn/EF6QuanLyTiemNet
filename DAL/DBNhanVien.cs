@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,7 +56,6 @@ namespace DAL
             catch (Exception ex)
             {
                 throw ex;
-                return false;
             }
         }
         public bool SuaNhanVien(NHANVIEN nv)
@@ -68,10 +68,19 @@ namespace DAL
             catch (Exception ex)
             {
                 throw ex;
-                return false;
             }
         }
 
-
+        public List<proc_LayTTNVDangNhap_Result> LayNVDangNhap()
+        {
+            try
+            {
+                return QuanLyTiemNetEntities.Instance.proc_LayTTNVDangNhap().ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
