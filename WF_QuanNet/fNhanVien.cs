@@ -252,5 +252,10 @@ namespace WF_QuanNet
             }
             */
         }
+
+        private void fNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -140,7 +140,7 @@ namespace WF_QuanNet
 
         private void taiKhoanBtn_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new fTaiKhoan(), sender as Button);
+            OpenChildForm(new fTaiKhoan(), sender as Button);
         }
 
         private void dichVuBtn_Click(object sender, EventArgs e)
