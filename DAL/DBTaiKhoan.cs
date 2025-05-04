@@ -33,7 +33,9 @@ namespace DAL
         {
             try
             {
-                QuanLyTiemNetEntities.Instance.sp_ThemTaiKhoan(TenTaiKhoan, SoDu);
+                QuanLyTiemNetEntities.Instance.sp_ThemTaiKhoan(
+                    string.IsNullOrEmpty(TenTaiKhoan) ? null : TenTaiKhoan,
+                    SoDu);
             }
             catch (Exception ex)
             {
@@ -45,7 +47,10 @@ namespace DAL
         {
             try
             {
-                QuanLyTiemNetEntities.Instance.sp_SuaTaiKhoan(TenTaiKhoan, MatKhau, SoDu);
+                QuanLyTiemNetEntities.Instance.sp_SuaTaiKhoan(
+                    string.IsNullOrEmpty(TenTaiKhoan) ? null : TenTaiKhoan,
+                    string.IsNullOrEmpty(MatKhau) ? null : MatKhau,
+                    SoDu);
             }
             catch (Exception ex)
             {
