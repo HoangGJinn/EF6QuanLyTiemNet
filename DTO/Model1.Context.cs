@@ -240,6 +240,22 @@ namespace DTO
             return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<int>("[QuanLyTiemNetEntities].[fn_TKMoiTrongThang]()");
         }
 
+        [DbFunction("QuanLyTiemNetEntities", "fn_TinhTongMayHD")]
+        public virtual IQueryable<int> fn_TinhTongMayHD()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<int>("[QuanLyTiemNetEntities].[fn_TinhTongMayHD]()");
+        }
+
+        [DbFunction("QuanLyTiemNetEntities", "fn_GetGiaTienTheoGio")]
+        public virtual IQueryable<int> fn_GetGiaTienTheoGio(string soMay)
+        {
+            var soMayParam = new ObjectParameter("SoMay", soMay);
+            return ((IObjectContextAdapter)this)
+                   .ObjectContext
+                   .CreateQuery<int>("[QuanLyTiemNetEntities].[fn_GetGiaTienTheoGio](@SoMay)", soMayParam);
+        }
+
+
         public virtual int proc_doiMkNv(string sDT, string matKhau)
         {
             var sDTParameter = sDT != null ?

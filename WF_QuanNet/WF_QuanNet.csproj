@@ -107,6 +107,18 @@
     <Compile Include="customcomponent\UcMayTinh.Designer.cs">
       <DependentUpon>UcMayTinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="fLK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLK.Designer.cs">
+      <DependentUpon>fLK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMayTinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMayTinh.Designer.cs">
+      <DependentUpon>fMayTinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="fMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +143,12 @@
     <Compile Include="fTaiKhoan.Designer.cs">
       <DependentUpon>fTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="fThemLM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThemLM.Designer.cs">
+      <DependentUpon>fThemLM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="customcomponent\CustomTextBox.resx">
@@ -151,6 +169,12 @@
     <EmbeddedResource Include="customcomponent\UcMayTinh.resx">
       <DependentUpon>UcMayTinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fLK.resx">
+      <DependentUpon>fLK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMayTinh.resx">
+      <DependentUpon>fMayTinh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fMenu.resx">
       <DependentUpon>fMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fTaiKhoan.resx">
       <DependentUpon>fTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThemLM.resx">
+      <DependentUpon>fThemLM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

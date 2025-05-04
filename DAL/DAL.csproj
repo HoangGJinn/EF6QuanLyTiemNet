@@ -53,6 +53,8 @@
   <ItemGroup>
     <Compile Include="DBHoaDon.cs" />
     <Compile Include="DBKhuyenMai.cs" />
+    <Compile Include="DBLM.cs" />
+    <Compile Include="DBMT.cs" />
     <Compile Include="DBNhanVien.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DBTaiKhoan.cs" />
