@@ -150,7 +150,7 @@ namespace WF_QuanNet
 
         private void khuyenMaiBtn_Click(object sender, EventArgs e)
         {
-           // OpenChildForm(new fKhuyenMai(), sender as Button);
+           OpenChildForm(new fKhuyenMai(), sender as Button);
         }
 
         private void hoaDonBtn_Click(object sender, EventArgs e)
