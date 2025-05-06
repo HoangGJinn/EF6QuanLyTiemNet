@@ -181,6 +181,12 @@
     <Compile Include="fDashBoard.Designer.cs">
       <DependentUpon>fDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="fDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDichVu.Designer.cs">
+      <DependentUpon>fDichVu.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fDashBoard.resx">
       <DependentUpon>fDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDichVu.resx">
+      <DependentUpon>fDichVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fMenu.resx">
       <DependentUpon>fMenu.cs</DependentUpon>
