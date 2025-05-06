@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -36,15 +36,81 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Azure.Core, Version=1.44.1.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Azure.Core.1.44.1\lib\net472\Azure.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Identity, Version=1.13.2.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Azure.Identity.1.13.2\lib\netstandard2.0\Azure.Identity.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client, Version=4.67.2.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Identity.Client.4.67.2\lib\net472\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.Extensions.Msal, Version=4.67.2.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Identity.Client.Extensions.Msal.4.67.2\lib\netstandard2.0\Microsoft.Identity.Client.Extensions.Msal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Abstractions.6.35.0\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ClientModel, Version=1.1.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ClientModel.1.1.0\lib\netstandard2.0\System.ClientModel.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.6.0.1\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IO.FileSystem.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.AccessControl.5.0.0\lib\net461\System.IO.FileSystem.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.Data.6.0.0\lib\net461\System.Memory.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.ProtectedData.4.7.0\lib\net461\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.10\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -169,12 +235,6 @@
     <EmbeddedResource Include="customcomponent\UcMayTinh.resx">
       <DependentUpon>UcMayTinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fLK.resx">
-      <DependentUpon>fLK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fMayTinh.resx">
-      <DependentUpon>fMayTinh.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fMenu.resx">
       <DependentUpon>fMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,77 +275,77 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\7up.png" />
-    <Content Include="images\Bánh cuốn.png" />
-    <Content Include="images\Bánh mì chảo.png" />
-    <Content Include="images\Bánh mì trứng.png" />
-    <Content Include="images\Bánh đa cua.png" />
-    <Content Include="images\Bún bò.png" />
-    <Content Include="images\Bún chả.jpg" />
-    <Content Include="images\Bún riêu.jpg" />
-    <Content Include="images\Bạc xỉu.png" />
-    <Content Include="images\Cafe sữa.png" />
-    <Content Include="images\Cafe đen.png" />
-    <Content Include="images\Cháo sườn.jpg" />
-    <Content Include="images\Coca Cola.png" />
-    <Content Include="images\Cơm chiên dương châu.png" />
-    <Content Include="images\Cơm gà.png" />
-    <Content Include="images\Cơm rang thập cẩm.png" />
-    <Content Include="images\Cơm sườn.png" />
-    <Content Include="images\Cơm tấm.png" />
-    <Content Include="images\Garena 100K.jpg" />
-    <Content Include="images\Garena 200K.jpg" />
-    <Content Include="images\Garena 20K.jpg" />
-    <Content Include="images\Garena 500K.jpg" />
-    <Content Include="images\Garena 50K.jpg" />
-    <Content Include="images\Gà rán.png" />
-    <Content Include="images\Hamburger.png" />
-    <Content Include="images\Hủ tiếu.jpg" />
-    <Content Include="images\Khoai tây chiên.png" />
-    <Content Include="images\Milo đá.png" />
-    <Content Include="images\Mirinda soda kem.png" />
-    <Content Include="images\Mirinda xá xị.png" />
-    <Content Include="images\Miến gà.png" />
-    <Content Include="images\Mobifone 100K.jpg" />
-    <Content Include="images\Mobifone 200K.jpg" />
-    <Content Include="images\Mobifone 20K.jpg" />
-    <Content Include="images\Mobifone 500K.jpg" />
-    <Content Include="images\Mobifone 50K.jpg" />
-    <Content Include="images\Mì trộn.png" />
-    <Content Include="images\Mì xào.png" />
-    <Content Include="images\Mì ý.png" />
-    <Content Include="images\Nước cam.png" />
-    <Content Include="images\Nước lọc.png" />
-    <Content Include="images\Nước ép cà rốt.png" />
-    <Content Include="images\Nước ép dưa hấu.png" />
-    <Content Include="images\Pepsi.png" />
-    <Content Include="images\Sinh tố bơ.png" />
-    <Content Include="images\Sinh tố dâu.png" />
-    <Content Include="images\Sinh tố xoài.png" />
-    <Content Include="images\Soda chanh.png" />
-    <Content Include="images\Sting dâu.png" />
-    <Content Include="images\Sting vàng.png" />
-    <Content Include="images\Sữa tươi trân châu đường đen.png" />
-    <Content Include="images\Trà chanh.png" />
-    <Content Include="images\Trà sữa khoai môn.png" />
-    <Content Include="images\Trà sữa matcha.png" />
-    <Content Include="images\Trà sữa.png" />
-    <Content Include="images\Trà vải.png" />
-    <Content Include="images\Trà đào cam sả.png" />
-    <Content Include="images\Viettel 100K.jpg" />
-    <Content Include="images\Viettel 200K.jpg" />
-    <Content Include="images\Viettel 20K.jpg" />
-    <Content Include="images\Viettel 500K.jpg" />
-    <Content Include="images\Viettel 50K.jpg" />
-    <Content Include="images\Vinaphone 100K.jpg" />
-    <Content Include="images\Vinaphone 200K.jpg" />
-    <Content Include="images\Vinaphone 20K.jpg" />
-    <Content Include="images\Vinaphone 500K.jpg" />
-    <Content Include="images\Vinaphone 50K.jpg" />
-    <Content Include="images\Warrior dâu.png" />
-    <Content Include="images\Warrior nho.png" />
-    <Content Include="images\Xôi gà.jpg" />
-    <Content Include="images\Xôi pate trứng.png" />
+    <Content Include="Images\7up.png" />
+    <Content Include="Images\Bánh cuốn.png" />
+    <Content Include="Images\Bánh mì chảo.png" />
+    <Content Include="Images\Bánh mì trứng.png" />
+    <Content Include="Images\Bánh đa cua.png" />
+    <Content Include="Images\Bún bò.png" />
+    <Content Include="Images\Bún chả.jpg" />
+    <Content Include="Images\Bún riêu.jpg" />
+    <Content Include="Images\Bạc xỉu.png" />
+    <Content Include="Images\Cafe sữa.png" />
+    <Content Include="Images\Cafe đen.png" />
+    <Content Include="Images\Cháo sườn.jpg" />
+    <Content Include="Images\Coca Cola.png" />
+    <Content Include="Images\Cơm chiên dương châu.png" />
+    <Content Include="Images\Cơm gà.png" />
+    <Content Include="Images\Cơm rang thập cẩm.png" />
+    <Content Include="Images\Cơm sườn.png" />
+    <Content Include="Images\Cơm tấm.png" />
+    <Content Include="Images\Garena 100K.jpg" />
+    <Content Include="Images\Garena 200K.jpg" />
+    <Content Include="Images\Garena 20K.jpg" />
+    <Content Include="Images\Garena 500K.jpg" />
+    <Content Include="Images\Garena 50K.jpg" />
+    <Content Include="Images\Gà rán.png" />
+    <Content Include="Images\Hamburger.png" />
+    <Content Include="Images\Hủ tiếu.jpg" />
+    <Content Include="Images\Khoai tây chiên.png" />
+    <Content Include="Images\Milo đá.png" />
+    <Content Include="Images\Mirinda soda kem.png" />
+    <Content Include="Images\Mirinda xá xị.png" />
+    <Content Include="Images\Miến gà.png" />
+    <Content Include="Images\Mobifone 100K.jpg" />
+    <Content Include="Images\Mobifone 200K.jpg" />
+    <Content Include="Images\Mobifone 20K.jpg" />
+    <Content Include="Images\Mobifone 500K.jpg" />
+    <Content Include="Images\Mobifone 50K.jpg" />
+    <Content Include="Images\Mì trộn.png" />
+    <Content Include="Images\Mì xào.png" />
+    <Content Include="Images\Mì ý.png" />
+    <Content Include="Images\Nước cam.png" />
+    <Content Include="Images\Nước lọc.png" />
+    <Content Include="Images\Nước ép cà rốt.png" />
+    <Content Include="Images\Nước ép dưa hấu.png" />
+    <Content Include="Images\Pepsi.png" />
+    <Content Include="Images\Sinh tố bơ.png" />
+    <Content Include="Images\Sinh tố dâu.png" />
+    <Content Include="Images\Sinh tố xoài.png" />
+    <Content Include="Images\Soda chanh.png" />
+    <Content Include="Images\Sting dâu.png" />
+    <Content Include="Images\Sting vàng.png" />
+    <Content Include="Images\Sữa tươi trân châu đường đen.png" />
+    <Content Include="Images\Trà chanh.png" />
+    <Content Include="Images\Trà sữa khoai môn.png" />
+    <Content Include="Images\Trà sữa matcha.png" />
+    <Content Include="Images\Trà sữa.png" />
+    <Content Include="Images\Trà vải.png" />
+    <Content Include="Images\Trà đào cam sả.png" />
+    <Content Include="Images\Viettel 100K.jpg" />
+    <Content Include="Images\Viettel 200K.jpg" />
+    <Content Include="Images\Viettel 20K.jpg" />
+    <Content Include="Images\Viettel 500K.jpg" />
+    <Content Include="Images\Viettel 50K.jpg" />
+    <Content Include="Images\Vinaphone 100K.jpg" />
+    <Content Include="Images\Vinaphone 200K.jpg" />
+    <Content Include="Images\Vinaphone 20K.jpg" />
+    <Content Include="Images\Vinaphone 500K.jpg" />
+    <Content Include="Images\Vinaphone 50K.jpg" />
+    <Content Include="Images\Warrior dâu.png" />
+    <Content Include="Images\Warrior nho.png" />
+    <Content Include="Images\Xôi gà.jpg" />
+    <Content Include="Images\Xôi pate trứng.png" />
     <Content Include="resources\bill.png" />
     <Content Include="resources\calendar.png" />
     <Content Include="resources\calendarDark.png" />
