@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.suaDABtn = new WF_QuanNet.CustomComponent.CustomButton();
             this.tenDoAnTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
+            this.LMCollapseBtn = new System.Windows.Forms.PictureBox();
             this.customPanel3 = new WF_QuanNet.CustomComponent.CustomPanel();
             this.dgvDA = new System.Windows.Forms.DataGridView();
             this.MaDVDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,6 +72,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.themTCBtn = new WF_QuanNet.CustomComponent.CustomButton();
             this.loaiTheTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.customPanel5 = new WF_QuanNet.CustomComponent.CustomPanel();
             this.dgvTC = new System.Windows.Forms.DataGridView();
             this.MaDVTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,6 +96,7 @@
             this.themDUBtn = new WF_QuanNet.CustomComponent.CustomButton();
             this.label2 = new System.Windows.Forms.Label();
             this.tenDoUongTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.customPanel2 = new WF_QuanNet.CustomComponent.CustomPanel();
             this.dgvDU = new System.Windows.Forms.DataGridView();
             this.MaDVDU = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -107,16 +110,19 @@
             this.customPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchdaBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LMCollapseBtn)).BeginInit();
             this.customPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDA)).BeginInit();
             this.customPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picTC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchtcBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.customPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTC)).BeginInit();
             this.customPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchduBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.customPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDU)).BeginInit();
             this.SuspendLayout();
@@ -138,6 +144,7 @@
             this.customPanel6.Controls.Add(this.label1);
             this.customPanel6.Controls.Add(this.suaDABtn);
             this.customPanel6.Controls.Add(this.tenDoAnTxtBox);
+            this.customPanel6.Controls.Add(this.LMCollapseBtn);
             this.customPanel6.Controls.Add(this.customPanel3);
             this.customPanel6.Controls.Add(this.dgdaTxtBox);
             this.customPanel6.Controls.Add(this.themDABtn);
@@ -374,6 +381,18 @@
             this.tenDoAnTxtBox.Texts = "";
             this.tenDoAnTxtBox.UnderlinedStyle = false;
             // 
+            // LMCollapseBtn
+            // 
+            this.LMCollapseBtn.BackColor = System.Drawing.Color.Transparent;
+            this.LMCollapseBtn.BackgroundImage = global::WF_QuanNet.Properties.Resources.direction;
+            this.LMCollapseBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LMCollapseBtn.Location = new System.Drawing.Point(405, 12);
+            this.LMCollapseBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LMCollapseBtn.Name = "LMCollapseBtn";
+            this.LMCollapseBtn.Size = new System.Drawing.Size(51, 50);
+            this.LMCollapseBtn.TabIndex = 3;
+            this.LMCollapseBtn.TabStop = false;
+            // 
             // customPanel3
             // 
             this.customPanel3.BackColor = System.Drawing.Color.Turquoise;
@@ -566,6 +585,7 @@
             this.customPanel4.Controls.Add(this.label5);
             this.customPanel4.Controls.Add(this.themTCBtn);
             this.customPanel4.Controls.Add(this.loaiTheTxtBox);
+            this.customPanel4.Controls.Add(this.pictureBox2);
             this.customPanel4.Controls.Add(this.customPanel5);
             this.customPanel4.Controls.Add(this.menhGiaTxtBox);
             this.customPanel4.Controls.Add(this.label8);
@@ -775,6 +795,18 @@
             this.loaiTheTxtBox.Texts = "";
             this.loaiTheTxtBox.UnderlinedStyle = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::WF_QuanNet.Properties.Resources.direction;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(288, 12);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(51, 50);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
             // customPanel5
             // 
             this.customPanel5.BackColor = System.Drawing.Color.Turquoise;
@@ -926,6 +958,7 @@
             this.customPanel1.Controls.Add(this.themDUBtn);
             this.customPanel1.Controls.Add(this.label2);
             this.customPanel1.Controls.Add(this.tenDoUongTxtBox);
+            this.customPanel1.Controls.Add(this.pictureBox1);
             this.customPanel1.Controls.Add(this.customPanel2);
             this.customPanel1.Controls.Add(this.dgduTxtBox);
             this.customPanel1.Controls.Add(this.label3);
@@ -1182,6 +1215,18 @@
             this.tenDoUongTxtBox.Texts = "";
             this.tenDoUongTxtBox.UnderlinedStyle = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::WF_QuanNet.Properties.Resources.direction;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(405, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(51, 50);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // customPanel2
             // 
             this.customPanel2.BackColor = System.Drawing.Color.Turquoise;
@@ -1354,18 +1399,21 @@
             this.customPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchdaBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LMCollapseBtn)).EndInit();
             this.customPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDA)).EndInit();
             this.customPanel4.ResumeLayout(false);
             this.customPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picTC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchtcBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.customPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTC)).EndInit();
             this.customPanel1.ResumeLayout(false);
             this.customPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDU)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchduBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.customPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDU)).EndInit();
             this.ResumeLayout(false);
@@ -1401,12 +1449,14 @@
         private System.Windows.Forms.Label label1;
         private CustomComponent.CustomButton suaDABtn;
         private CustomComponent.CustomTextBox tenDoAnTxtBox;
+        private System.Windows.Forms.PictureBox LMCollapseBtn;
         private CustomComponent.CustomPanel customPanel3;
         private System.Windows.Forms.DataGridView dgvDA;
         private CustomComponent.CustomTextBox dgdaTxtBox;
         private CustomComponent.CustomButton themDABtn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private CustomComponent.CustomPanel customPanel4;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox picTC;
@@ -1419,6 +1469,7 @@
         private System.Windows.Forms.Label label5;
         private CustomComponent.CustomButton themTCBtn;
         private CustomComponent.CustomTextBox loaiTheTxtBox;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private CustomComponent.CustomPanel customPanel5;
         private System.Windows.Forms.DataGridView dgvTC;
         private CustomComponent.CustomTextBox menhGiaTxtBox;
