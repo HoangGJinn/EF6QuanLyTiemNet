@@ -205,6 +205,12 @@
     <Compile Include="fHoaDon.Designer.cs">
       <DependentUpon>fHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="fKhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhuyenMai.Designer.cs">
+      <DependentUpon>fKhuyenMai.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fHoaDon.resx">
       <DependentUpon>fHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKhuyenMai.resx">
+      <DependentUpon>fKhuyenMai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fMenu.resx">
       <DependentUpon>fMenu.cs</DependentUpon>
