@@ -119,6 +119,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBDT.cs" />
     <Compile Include="DBHoaDon.cs" />
     <Compile Include="DBKhuyenMai.cs" />
     <Compile Include="DBLM.cs" />
