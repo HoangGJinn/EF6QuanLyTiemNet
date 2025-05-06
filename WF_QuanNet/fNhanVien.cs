@@ -40,7 +40,16 @@ namespace WF_QuanNet
             }
             else
             {
-                dt = dbNhanVien.TimNhanVien(searchText);
+                List<NHANVIEN> nv =  dbNhanVien.TimNhanVien(searchText);
+                dt = nv.Select(x => new DanhSachNhanVien
+                {
+                    MaNV = x.MaNV,
+                    HoTen = x.HoTen,
+                    DiaChi = x.DiaChi,
+                    SDT = x.SDT,
+                    GioiTinh = x.GioiTinh,
+                    NgaySinh = x.NgaySinh
+                }).ToList();
             }
 
             //dgvStaff.Rows.Clear();
