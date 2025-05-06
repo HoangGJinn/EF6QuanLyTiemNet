@@ -173,17 +173,11 @@
     <Compile Include="customcomponent\UcMayTinh.Designer.cs">
       <DependentUpon>UcMayTinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="fLK.cs">
+    <Content Include="fDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fLK.Designer.cs">
-      <DependentUpon>fLK.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fMayTinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fMayTinh.Designer.cs">
-      <DependentUpon>fMayTinh.cs</DependentUpon>
+    <Compile Include="fDichVu.Designer.cs">
+      <DependentUpon>fDichVu.cs</DependentUpon>
     </Compile>
     <Compile Include="fMenu.cs">
       <SubType>Form</SubType>

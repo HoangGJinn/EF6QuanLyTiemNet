@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/WF_QuanNet/fDichVu.cs
+/WF_QuanNet/fDichVu.Designer.cs
+/WF_QuanNet/fDichVu.resx
