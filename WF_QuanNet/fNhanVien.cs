@@ -43,7 +43,7 @@ namespace WF_QuanNet
                 dt = dbNhanVien.TimNhanVien(searchText);
             }
 
-            //dgvStaff.Rows.Clear();
+            dgvStaff.Rows.Clear();
             dgvStaff.DataSource = dt;
         }
         private string formatPrice(long price)
@@ -76,7 +76,7 @@ namespace WF_QuanNet
 
         private void themMoiNvBtn_Click(object sender, EventArgs e)
         {
-            
+            /*
             lmNvBtn_Click(sender, e);
             infoPanel.Visible = true;
             suaNvBtn.Visible = false;
@@ -85,6 +85,7 @@ namespace WF_QuanNet
             themNvBtn.Visible = true;
             mkBtn.Visible = false;
             sdtTxtBox.Enabled = true;
+            */
         }
 
         private void searchBtn_Click(object sender, EventArgs e)
@@ -94,7 +95,7 @@ namespace WF_QuanNet
 
         private void themNvBtn_Click(object sender, EventArgs e)
         {
-            
+            /*
             try
             {
                 DialogResult result = MessageBox.Show(
@@ -111,14 +112,8 @@ namespace WF_QuanNet
                 string sdt = sdtTxtBox.Texts;
                 string diaChi = dcTxtBox.Texts;
                 string gioiTinh = gtCbBox.Texts;
-                dbNhanVien.ThemNhanVien(new NHANVIEN
-                {
-                    HoTen = tenNv,
-                    SDT = sdt,
-                    DiaChi = diaChi,
-                    GioiTinh = gioiTinh,
-                    NgaySinh = dobPick.Value
-                });
+                DateTime dob = dobPick.Value;
+                dbNhanVien.ThemNhanVien(tenNv, sdt, diaChi, gioiTinh, dob);
                 infoPanel.Visible = false;
                 LoadNV();
                 MessageBox.Show("Thêm nhân viên thành công");
@@ -127,7 +122,7 @@ namespace WF_QuanNet
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
-            
+            */
 
         }
 
@@ -145,7 +140,7 @@ namespace WF_QuanNet
 
         private void suaNvBtn_Click(object sender, EventArgs e)
         {
-            
+            /*
             try
             {
                 if (dgvStaff.SelectedRows.Count > 0)
@@ -166,14 +161,7 @@ namespace WF_QuanNet
                     string diaChi = dcTxtBox.Texts;
                     string gioiTinh = gtCbBox.Texts;
                     DateTime dob = dobPick.Value;
-                    dbNhanVien.SuaNhanVien(new NHANVIEN
-                    {
-                        MaNV = int.Parse(maNv),
-                        HoTen = tenNv,
-                        DiaChi = diaChi,
-                        GioiTinh = gioiTinh,
-                        NgaySinh = dob
-                    });
+                    dbNhanVien.SuaNhanVien(maNv, tenNv, diaChi, gioiTinh, dob);
                     LoadNV();
                     MessageBox.Show("Sửa nhân viên thành công");
                     foreach (DataGridViewRow dr in dgvStaff.Rows)
@@ -191,12 +179,12 @@ namespace WF_QuanNet
             {
                 MessageBox.Show(ex.Message);
             }
-            
+            */
         }
 
         private void xoaNvBtn_Click(object sender, EventArgs e)
         {
-            
+            /*
             string manv;
             try
             {
@@ -214,8 +202,7 @@ namespace WF_QuanNet
                     }
                     DataGridViewRow row = dgvStaff.SelectedRows[0];
                     manv = row.Cells["id"].Value.ToString();
-                    int id = int.Parse(manv);
-                    dbNhanVien.XoaNhanVien(id);
+                    dbNhanVien.XoaNhanVien(manv);
                     MessageBox.Show("Xóa nhân viên thành công");
                 }
             }
@@ -225,7 +212,7 @@ namespace WF_QuanNet
             }
             LoadNV();
             infoPanel.Visible = false;
-            
+            */
         }
 
         private void huyNvBtn_Click(object sender, EventArgs e)
@@ -251,11 +238,6 @@ namespace WF_QuanNet
                 }
             }
             */
-        }
-
-        private void fNhanVien_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

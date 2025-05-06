@@ -31,6 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.infoPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lb = new System.Windows.Forms.Label();
+            this.searchBtn = new System.Windows.Forms.PictureBox();
             this.mkBtn = new WF_QuanNet.CustomComponent.CustomButton();
             this.lmNvBtn = new WF_QuanNet.CustomComponent.CustomButton();
             this.huyNvBtn = new WF_QuanNet.CustomComponent.CustomButton();
@@ -42,14 +48,10 @@
             this.dcTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
             this.sdtTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
             this.tenNvTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lb = new System.Windows.Forms.Label();
-            this.searchBtn = new System.Windows.Forms.PictureBox();
             this.customPanel1 = new WF_QuanNet.CustomComponent.CustomPanel();
             this.dgvStaff = new System.Windows.Forms.DataGridView();
+            this.searchTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
+            this.themMoiNvBtn = new WF_QuanNet.CustomComponent.CustomButton();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.full_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,8 +60,6 @@
             this.diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sohdlapthang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.doanhthuthang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.searchTxtBox = new WF_QuanNet.CustomComponent.CustomTextBox();
-            this.themMoiNvBtn = new WF_QuanNet.CustomComponent.CustomButton();
             this.infoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchBtn)).BeginInit();
             this.customPanel1.SuspendLayout();
@@ -84,12 +84,75 @@
             this.infoPanel.Controls.Add(this.label6);
             this.infoPanel.Controls.Add(this.label2);
             this.infoPanel.Controls.Add(this.lb);
-            this.infoPanel.Location = new System.Drawing.Point(28, 678);
+            this.infoPanel.Location = new System.Drawing.Point(25, 542);
             this.infoPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.infoPanel.Name = "infoPanel";
-            this.infoPanel.Size = new System.Drawing.Size(1413, 241);
+            this.infoPanel.Size = new System.Drawing.Size(1256, 193);
             this.infoPanel.TabIndex = 49;
             this.infoPanel.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(603, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Giới tính";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1029, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 20);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Địa chỉ:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(341, 14);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 20);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Số điện thoại";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(820, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Ngày sinh";
+            // 
+            // lb
+            // 
+            this.lb.AutoSize = true;
+            this.lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb.Location = new System.Drawing.Point(13, 14);
+            this.lb.Name = "lb";
+            this.lb.Size = new System.Drawing.Size(157, 20);
+            this.lb.TabIndex = 0;
+            this.lb.Text = "Họ và tên nhân viên";
+            // 
+            // searchBtn
+            // 
+            this.searchBtn.BackColor = System.Drawing.Color.Transparent;
+            this.searchBtn.BackgroundImage = global::WF_QuanNet.Properties.Resources.search;
+            this.searchBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.searchBtn.Location = new System.Drawing.Point(1235, 18);
+            this.searchBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.searchBtn.Name = "searchBtn";
+            this.searchBtn.Size = new System.Drawing.Size(32, 30);
+            this.searchBtn.TabIndex = 47;
+            this.searchBtn.TabStop = false;
+            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             // 
             // mkBtn
             // 
@@ -102,10 +165,10 @@
             this.mkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mkBtn.ForeColor = System.Drawing.Color.White;
-            this.mkBtn.Location = new System.Drawing.Point(711, 154);
+            this.mkBtn.Location = new System.Drawing.Point(632, 123);
             this.mkBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mkBtn.Name = "mkBtn";
-            this.mkBtn.Size = new System.Drawing.Size(154, 61);
+            this.mkBtn.Size = new System.Drawing.Size(137, 49);
             this.mkBtn.TabIndex = 53;
             this.mkBtn.Text = "Mật Khẩu";
             this.mkBtn.TextColor = System.Drawing.Color.White;
@@ -123,10 +186,10 @@
             this.lmNvBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lmNvBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lmNvBtn.ForeColor = System.Drawing.Color.White;
-            this.lmNvBtn.Location = new System.Drawing.Point(333, 154);
+            this.lmNvBtn.Location = new System.Drawing.Point(296, 123);
             this.lmNvBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lmNvBtn.Name = "lmNvBtn";
-            this.lmNvBtn.Size = new System.Drawing.Size(154, 61);
+            this.lmNvBtn.Size = new System.Drawing.Size(137, 49);
             this.lmNvBtn.TabIndex = 52;
             this.lmNvBtn.Text = "Làm Mới";
             this.lmNvBtn.TextColor = System.Drawing.Color.White;
@@ -144,10 +207,10 @@
             this.huyNvBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.huyNvBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.huyNvBtn.ForeColor = System.Drawing.Color.White;
-            this.huyNvBtn.Location = new System.Drawing.Point(1089, 154);
+            this.huyNvBtn.Location = new System.Drawing.Point(968, 123);
             this.huyNvBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.huyNvBtn.Name = "huyNvBtn";
-            this.huyNvBtn.Size = new System.Drawing.Size(154, 61);
+            this.huyNvBtn.Size = new System.Drawing.Size(137, 49);
             this.huyNvBtn.TabIndex = 51;
             this.huyNvBtn.Text = "Hủy";
             this.huyNvBtn.TextColor = System.Drawing.Color.White;
@@ -165,10 +228,10 @@
             this.xoaNvBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.xoaNvBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xoaNvBtn.ForeColor = System.Drawing.Color.White;
-            this.xoaNvBtn.Location = new System.Drawing.Point(900, 154);
+            this.xoaNvBtn.Location = new System.Drawing.Point(800, 123);
             this.xoaNvBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xoaNvBtn.Name = "xoaNvBtn";
-            this.xoaNvBtn.Size = new System.Drawing.Size(154, 61);
+            this.xoaNvBtn.Size = new System.Drawing.Size(137, 49);
             this.xoaNvBtn.TabIndex = 50;
             this.xoaNvBtn.Text = "Xóa";
             this.xoaNvBtn.TextColor = System.Drawing.Color.White;
@@ -186,10 +249,10 @@
             this.suaNvBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.suaNvBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.suaNvBtn.ForeColor = System.Drawing.Color.White;
-            this.suaNvBtn.Location = new System.Drawing.Point(522, 154);
+            this.suaNvBtn.Location = new System.Drawing.Point(464, 123);
             this.suaNvBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.suaNvBtn.Name = "suaNvBtn";
-            this.suaNvBtn.Size = new System.Drawing.Size(154, 61);
+            this.suaNvBtn.Size = new System.Drawing.Size(137, 49);
             this.suaNvBtn.TabIndex = 49;
             this.suaNvBtn.Text = "Cập Nhật";
             this.suaNvBtn.TextColor = System.Drawing.Color.White;
@@ -207,10 +270,10 @@
             this.themNvBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.themNvBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.themNvBtn.ForeColor = System.Drawing.Color.White;
-            this.themNvBtn.Location = new System.Drawing.Point(144, 154);
+            this.themNvBtn.Location = new System.Drawing.Point(128, 123);
             this.themNvBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.themNvBtn.Name = "themNvBtn";
-            this.themNvBtn.Size = new System.Drawing.Size(154, 61);
+            this.themNvBtn.Size = new System.Drawing.Size(137, 49);
             this.themNvBtn.TabIndex = 48;
             this.themNvBtn.Text = "Thêm";
             this.themNvBtn.TextColor = System.Drawing.Color.White;
@@ -223,11 +286,11 @@
             this.dobPick.BorderSize = 0;
             this.dobPick.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.dobPick.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dobPick.Location = new System.Drawing.Point(927, 51);
+            this.dobPick.Location = new System.Drawing.Point(824, 41);
             this.dobPick.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dobPick.MinimumSize = new System.Drawing.Size(4, 35);
             this.dobPick.Name = "dobPick";
-            this.dobPick.Size = new System.Drawing.Size(181, 35);
+            this.dobPick.Size = new System.Drawing.Size(161, 35);
             this.dobPick.SkinColor = System.Drawing.Color.MediumSlateBlue;
             this.dobPick.TabIndex = 47;
             this.dobPick.TextColor = System.Drawing.Color.White;
@@ -243,12 +306,12 @@
             this.gtCbBox.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.gtCbBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.gtCbBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.gtCbBox.Location = new System.Drawing.Point(681, 52);
+            this.gtCbBox.Location = new System.Drawing.Point(605, 42);
             this.gtCbBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gtCbBox.MinimumSize = new System.Drawing.Size(168, 38);
+            this.gtCbBox.MinimumSize = new System.Drawing.Size(149, 30);
             this.gtCbBox.Name = "gtCbBox";
             this.gtCbBox.Padding = new System.Windows.Forms.Padding(1);
-            this.gtCbBox.Size = new System.Drawing.Size(186, 51);
+            this.gtCbBox.Size = new System.Drawing.Size(165, 41);
             this.gtCbBox.TabIndex = 46;
             this.gtCbBox.Texts = "";
             // 
@@ -260,15 +323,15 @@
             this.dcTxtBox.BorderRadius = 15;
             this.dcTxtBox.BorderSize = 2;
             this.dcTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dcTxtBox.Location = new System.Drawing.Point(1164, 51);
-            this.dcTxtBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dcTxtBox.Location = new System.Drawing.Point(1035, 41);
+            this.dcTxtBox.Margin = new System.Windows.Forms.Padding(5);
             this.dcTxtBox.Multiline = false;
             this.dcTxtBox.Name = "dcTxtBox";
-            this.dcTxtBox.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.dcTxtBox.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
             this.dcTxtBox.PasswordChar = false;
             this.dcTxtBox.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.dcTxtBox.PlaceholderText = "Nhập địa chỉ";
-            this.dcTxtBox.Size = new System.Drawing.Size(204, 45);
+            this.dcTxtBox.Size = new System.Drawing.Size(181, 37);
             this.dcTxtBox.TabIndex = 45;
             this.dcTxtBox.Texts = "";
             this.dcTxtBox.UnderlinedStyle = false;
@@ -281,15 +344,15 @@
             this.sdtTxtBox.BorderRadius = 15;
             this.sdtTxtBox.BorderSize = 2;
             this.sdtTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sdtTxtBox.Location = new System.Drawing.Point(390, 52);
-            this.sdtTxtBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.sdtTxtBox.Location = new System.Drawing.Point(347, 42);
+            this.sdtTxtBox.Margin = new System.Windows.Forms.Padding(5);
             this.sdtTxtBox.Multiline = false;
             this.sdtTxtBox.Name = "sdtTxtBox";
-            this.sdtTxtBox.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.sdtTxtBox.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
             this.sdtTxtBox.PasswordChar = false;
             this.sdtTxtBox.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.sdtTxtBox.PlaceholderText = "Nhập số điện thoại";
-            this.sdtTxtBox.Size = new System.Drawing.Size(235, 45);
+            this.sdtTxtBox.Size = new System.Drawing.Size(209, 37);
             this.sdtTxtBox.TabIndex = 44;
             this.sdtTxtBox.Texts = "";
             this.sdtTxtBox.UnderlinedStyle = false;
@@ -302,81 +365,18 @@
             this.tenNvTxtBox.BorderRadius = 15;
             this.tenNvTxtBox.BorderSize = 2;
             this.tenNvTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenNvTxtBox.Location = new System.Drawing.Point(19, 51);
-            this.tenNvTxtBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tenNvTxtBox.Location = new System.Drawing.Point(17, 41);
+            this.tenNvTxtBox.Margin = new System.Windows.Forms.Padding(5);
             this.tenNvTxtBox.Multiline = false;
             this.tenNvTxtBox.Name = "tenNvTxtBox";
-            this.tenNvTxtBox.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.tenNvTxtBox.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
             this.tenNvTxtBox.PasswordChar = false;
             this.tenNvTxtBox.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.tenNvTxtBox.PlaceholderText = "Nhập tên nhân viên";
-            this.tenNvTxtBox.Size = new System.Drawing.Size(306, 45);
+            this.tenNvTxtBox.Size = new System.Drawing.Size(272, 37);
             this.tenNvTxtBox.TabIndex = 43;
             this.tenNvTxtBox.Texts = "";
             this.tenNvTxtBox.UnderlinedStyle = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(678, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 25);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Giới tính";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1158, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 25);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Địa chỉ:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(384, 18);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 25);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Số điện thoại";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(922, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Ngày sinh";
-            // 
-            // lb
-            // 
-            this.lb.AutoSize = true;
-            this.lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb.Location = new System.Drawing.Point(15, 18);
-            this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(204, 25);
-            this.lb.TabIndex = 0;
-            this.lb.Text = "Họ và tên nhân viên";
-            // 
-            // searchBtn
-            // 
-            this.searchBtn.BackColor = System.Drawing.Color.Transparent;
-            this.searchBtn.BackgroundImage = global::WF_QuanNet.Properties.Resources.search;
-            this.searchBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.searchBtn.Location = new System.Drawing.Point(1389, 22);
-            this.searchBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(36, 38);
-            this.searchBtn.TabIndex = 47;
-            this.searchBtn.TabStop = false;
-            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             // 
             // customPanel1
             // 
@@ -387,10 +387,10 @@
             this.customPanel1.GradientAngle = 90F;
             this.customPanel1.GradientBottomColor = System.Drawing.Color.White;
             this.customPanel1.GradientTopColor = System.Drawing.Color.White;
-            this.customPanel1.Location = new System.Drawing.Point(3, 81);
+            this.customPanel1.Location = new System.Drawing.Point(3, 65);
             this.customPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.customPanel1.Name = "customPanel1";
-            this.customPanel1.Size = new System.Drawing.Size(1454, 591);
+            this.customPanel1.Size = new System.Drawing.Size(1292, 473);
             this.customPanel1.TabIndex = 48;
             // 
             // dgvStaff
@@ -442,9 +442,51 @@
             this.dgvStaff.RowHeadersWidth = 51;
             this.dgvStaff.RowTemplate.Height = 29;
             this.dgvStaff.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStaff.Size = new System.Drawing.Size(1454, 591);
+            this.dgvStaff.Size = new System.Drawing.Size(1292, 473);
             this.dgvStaff.TabIndex = 28;
             this.dgvStaff.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStaff_CellClick);
+            // 
+            // searchTxtBox
+            // 
+            this.searchTxtBox.BackColor = System.Drawing.Color.White;
+            this.searchTxtBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.searchTxtBox.BorderFocusColor = System.Drawing.Color.MediumSlateBlue;
+            this.searchTxtBox.BorderRadius = 16;
+            this.searchTxtBox.BorderSize = 2;
+            this.searchTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchTxtBox.Location = new System.Drawing.Point(1016, 12);
+            this.searchTxtBox.Margin = new System.Windows.Forms.Padding(5);
+            this.searchTxtBox.Multiline = false;
+            this.searchTxtBox.Name = "searchTxtBox";
+            this.searchTxtBox.Padding = new System.Windows.Forms.Padding(11, 7, 55, 7);
+            this.searchTxtBox.PasswordChar = false;
+            this.searchTxtBox.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.searchTxtBox.PlaceholderText = "Tìm kiếm";
+            this.searchTxtBox.Size = new System.Drawing.Size(265, 40);
+            this.searchTxtBox.TabIndex = 46;
+            this.searchTxtBox.Texts = "";
+            this.searchTxtBox.UnderlinedStyle = false;
+            // 
+            // themMoiNvBtn
+            // 
+            this.themMoiNvBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.themMoiNvBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.themMoiNvBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.themMoiNvBtn.BorderRadius = 20;
+            this.themMoiNvBtn.BorderSize = 2;
+            this.themMoiNvBtn.FlatAppearance.BorderSize = 0;
+            this.themMoiNvBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.themMoiNvBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.themMoiNvBtn.ForeColor = System.Drawing.Color.White;
+            this.themMoiNvBtn.Location = new System.Drawing.Point(31, 6);
+            this.themMoiNvBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.themMoiNvBtn.Name = "themMoiNvBtn";
+            this.themMoiNvBtn.Size = new System.Drawing.Size(149, 49);
+            this.themMoiNvBtn.TabIndex = 45;
+            this.themMoiNvBtn.Text = "Thêm Mới";
+            this.themMoiNvBtn.TextColor = System.Drawing.Color.White;
+            this.themMoiNvBtn.UseVisualStyleBackColor = false;
+            this.themMoiNvBtn.Click += new System.EventHandler(this.themMoiNvBtn_Click);
             // 
             // id
             // 
@@ -529,54 +571,12 @@
             this.doanhthuthang.Name = "doanhthuthang";
             this.doanhthuthang.ReadOnly = true;
             // 
-            // searchTxtBox
-            // 
-            this.searchTxtBox.BackColor = System.Drawing.Color.White;
-            this.searchTxtBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.searchTxtBox.BorderFocusColor = System.Drawing.Color.MediumSlateBlue;
-            this.searchTxtBox.BorderRadius = 16;
-            this.searchTxtBox.BorderSize = 2;
-            this.searchTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchTxtBox.Location = new System.Drawing.Point(1143, 15);
-            this.searchTxtBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.searchTxtBox.Multiline = false;
-            this.searchTxtBox.Name = "searchTxtBox";
-            this.searchTxtBox.Padding = new System.Windows.Forms.Padding(12, 9, 62, 9);
-            this.searchTxtBox.PasswordChar = false;
-            this.searchTxtBox.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.searchTxtBox.PlaceholderText = "Tìm kiếm";
-            this.searchTxtBox.Size = new System.Drawing.Size(298, 48);
-            this.searchTxtBox.TabIndex = 46;
-            this.searchTxtBox.Texts = "";
-            this.searchTxtBox.UnderlinedStyle = false;
-            // 
-            // themMoiNvBtn
-            // 
-            this.themMoiNvBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.themMoiNvBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.themMoiNvBtn.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.themMoiNvBtn.BorderRadius = 20;
-            this.themMoiNvBtn.BorderSize = 2;
-            this.themMoiNvBtn.FlatAppearance.BorderSize = 0;
-            this.themMoiNvBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.themMoiNvBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.themMoiNvBtn.ForeColor = System.Drawing.Color.White;
-            this.themMoiNvBtn.Location = new System.Drawing.Point(35, 8);
-            this.themMoiNvBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.themMoiNvBtn.Name = "themMoiNvBtn";
-            this.themMoiNvBtn.Size = new System.Drawing.Size(168, 61);
-            this.themMoiNvBtn.TabIndex = 45;
-            this.themMoiNvBtn.Text = "Thêm Mới";
-            this.themMoiNvBtn.TextColor = System.Drawing.Color.White;
-            this.themMoiNvBtn.UseVisualStyleBackColor = false;
-            this.themMoiNvBtn.Click += new System.EventHandler(this.themMoiNvBtn_Click);
-            // 
             // fNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1462, 929);
+            this.ClientSize = new System.Drawing.Size(1300, 743);
             this.Controls.Add(this.infoPanel);
             this.Controls.Add(this.customPanel1);
             this.Controls.Add(this.searchBtn);
@@ -586,7 +586,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fNhanVien";
             this.Text = "NhanVien";
-            this.Load += new System.EventHandler(this.fNhanVien_Load);
             this.infoPanel.ResumeLayout(false);
             this.infoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchBtn)).EndInit();

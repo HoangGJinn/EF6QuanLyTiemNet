@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMenu));
             this.pnlMovable = new System.Windows.Forms.Panel();
-            this.Heading = new System.Windows.Forms.Label();
             this.miniBtn = new System.Windows.Forms.Button();
             this.quitBtn = new System.Windows.Forms.Button();
             this.pnlMenubar = new System.Windows.Forms.Panel();
@@ -43,6 +42,7 @@
             this.dichVuBtn = new System.Windows.Forms.Button();
             this.taiKhoanBtn = new System.Windows.Forms.Button();
             this.pnlMain = new WF_QuanNet.CustomComponent.CustomPanel();
+            this.Heading = new System.Windows.Forms.Label();
             this.pnlMovable.SuspendLayout();
             this.pnlMenubar.SuspendLayout();
             this.SuspendLayout();
@@ -54,23 +54,10 @@
             this.pnlMovable.Controls.Add(this.miniBtn);
             this.pnlMovable.Controls.Add(this.quitBtn);
             this.pnlMovable.Location = new System.Drawing.Point(0, 0);
-            this.pnlMovable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlMovable.Name = "pnlMovable";
-            this.pnlMovable.Size = new System.Drawing.Size(1713, 57);
+            this.pnlMovable.Size = new System.Drawing.Size(1142, 37);
             this.pnlMovable.TabIndex = 5;
             this.pnlMovable.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMovable_MouseDown);
-            // 
-            // Heading
-            // 
-            this.Heading.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Heading.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.Heading.Location = new System.Drawing.Point(350, 11);
-            this.Heading.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Heading.Name = "Heading";
-            this.Heading.Size = new System.Drawing.Size(1202, 35);
-            this.Heading.TabIndex = 5;
-            this.Heading.Text = "Danh Mục ";
-            this.Heading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // miniBtn
             // 
@@ -79,10 +66,10 @@
             this.miniBtn.FlatAppearance.BorderSize = 0;
             this.miniBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.miniBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.miniBtn.Location = new System.Drawing.Point(1614, 0);
+            this.miniBtn.Location = new System.Drawing.Point(1076, 0);
             this.miniBtn.Margin = new System.Windows.Forms.Padding(0);
             this.miniBtn.Name = "miniBtn";
-            this.miniBtn.Size = new System.Drawing.Size(50, 55);
+            this.miniBtn.Size = new System.Drawing.Size(33, 36);
             this.miniBtn.TabIndex = 4;
             this.miniBtn.UseVisualStyleBackColor = false;
             this.miniBtn.Click += new System.EventHandler(this.miniBtn_Click);
@@ -94,10 +81,10 @@
             this.quitBtn.FlatAppearance.BorderSize = 0;
             this.quitBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             this.quitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.quitBtn.Location = new System.Drawing.Point(1664, 0);
+            this.quitBtn.Location = new System.Drawing.Point(1109, 0);
             this.quitBtn.Margin = new System.Windows.Forms.Padding(0);
             this.quitBtn.Name = "quitBtn";
-            this.quitBtn.Size = new System.Drawing.Size(50, 55);
+            this.quitBtn.Size = new System.Drawing.Size(33, 36);
             this.quitBtn.TabIndex = 3;
             this.quitBtn.UseVisualStyleBackColor = false;
             this.quitBtn.Click += new System.EventHandler(this.quitBtn_Click);
@@ -114,9 +101,8 @@
             this.pnlMenubar.Controls.Add(this.dichVuBtn);
             this.pnlMenubar.Controls.Add(this.taiKhoanBtn);
             this.pnlMenubar.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenubar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlMenubar.Name = "pnlMenubar";
-            this.pnlMenubar.Size = new System.Drawing.Size(222, 1017);
+            this.pnlMenubar.Size = new System.Drawing.Size(148, 661);
             this.pnlMenubar.TabIndex = 6;
             // 
             // thongKeBtn
@@ -126,10 +112,9 @@
             this.thongKeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thongKeBtn.ForeColor = System.Drawing.Color.White;
             this.thongKeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.thongKeBtn.Location = new System.Drawing.Point(4, 169);
-            this.thongKeBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.thongKeBtn.Location = new System.Drawing.Point(3, 110);
             this.thongKeBtn.Name = "thongKeBtn";
-            this.thongKeBtn.Size = new System.Drawing.Size(238, 77);
+            this.thongKeBtn.Size = new System.Drawing.Size(159, 50);
             this.thongKeBtn.TabIndex = 8;
             this.thongKeBtn.Text = "Thống Kê";
             this.thongKeBtn.UseVisualStyleBackColor = true;
@@ -142,10 +127,9 @@
             this.hoaDonBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hoaDonBtn.ForeColor = System.Drawing.Color.White;
             this.hoaDonBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.hoaDonBtn.Location = new System.Drawing.Point(4, 732);
-            this.hoaDonBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.hoaDonBtn.Location = new System.Drawing.Point(3, 476);
             this.hoaDonBtn.Name = "hoaDonBtn";
-            this.hoaDonBtn.Size = new System.Drawing.Size(238, 77);
+            this.hoaDonBtn.Size = new System.Drawing.Size(159, 50);
             this.hoaDonBtn.TabIndex = 7;
             this.hoaDonBtn.Text = "Hóa Đơn";
             this.hoaDonBtn.UseVisualStyleBackColor = true;
@@ -158,10 +142,9 @@
             this.nhanVienBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nhanVienBtn.ForeColor = System.Drawing.Color.White;
             this.nhanVienBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.nhanVienBtn.Location = new System.Drawing.Point(4, 357);
-            this.nhanVienBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nhanVienBtn.Location = new System.Drawing.Point(3, 232);
             this.nhanVienBtn.Name = "nhanVienBtn";
-            this.nhanVienBtn.Size = new System.Drawing.Size(238, 77);
+            this.nhanVienBtn.Size = new System.Drawing.Size(159, 50);
             this.nhanVienBtn.TabIndex = 6;
             this.nhanVienBtn.Text = "Nhân Viên";
             this.nhanVienBtn.UseVisualStyleBackColor = true;
@@ -174,10 +157,9 @@
             this.mayTinhBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mayTinhBtn.ForeColor = System.Drawing.Color.White;
             this.mayTinhBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.mayTinhBtn.Location = new System.Drawing.Point(4, 263);
-            this.mayTinhBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mayTinhBtn.Location = new System.Drawing.Point(3, 171);
             this.mayTinhBtn.Name = "mayTinhBtn";
-            this.mayTinhBtn.Size = new System.Drawing.Size(238, 77);
+            this.mayTinhBtn.Size = new System.Drawing.Size(159, 50);
             this.mayTinhBtn.TabIndex = 4;
             this.mayTinhBtn.Text = "Máy Tính";
             this.mayTinhBtn.UseVisualStyleBackColor = true;
@@ -191,10 +173,9 @@
             this.bthLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.bthLogout.Image = ((System.Drawing.Image)(resources.GetObject("bthLogout.Image")));
             this.bthLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bthLogout.Location = new System.Drawing.Point(0, 935);
-            this.bthLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bthLogout.Location = new System.Drawing.Point(0, 608);
             this.bthLogout.Name = "bthLogout";
-            this.bthLogout.Size = new System.Drawing.Size(192, 77);
+            this.bthLogout.Size = new System.Drawing.Size(128, 50);
             this.bthLogout.TabIndex = 3;
             this.bthLogout.Text = "Đăng xuất";
             this.bthLogout.UseVisualStyleBackColor = true;
@@ -207,10 +188,9 @@
             this.khuyenMaiBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.khuyenMaiBtn.ForeColor = System.Drawing.Color.White;
             this.khuyenMaiBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.khuyenMaiBtn.Location = new System.Drawing.Point(4, 638);
-            this.khuyenMaiBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.khuyenMaiBtn.Location = new System.Drawing.Point(3, 415);
             this.khuyenMaiBtn.Name = "khuyenMaiBtn";
-            this.khuyenMaiBtn.Size = new System.Drawing.Size(238, 77);
+            this.khuyenMaiBtn.Size = new System.Drawing.Size(159, 50);
             this.khuyenMaiBtn.TabIndex = 2;
             this.khuyenMaiBtn.Text = "Khuyến Mãi";
             this.khuyenMaiBtn.UseVisualStyleBackColor = true;
@@ -223,10 +203,9 @@
             this.dichVuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dichVuBtn.ForeColor = System.Drawing.Color.White;
             this.dichVuBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dichVuBtn.Location = new System.Drawing.Point(0, 545);
-            this.dichVuBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dichVuBtn.Location = new System.Drawing.Point(0, 354);
             this.dichVuBtn.Name = "dichVuBtn";
-            this.dichVuBtn.Size = new System.Drawing.Size(243, 77);
+            this.dichVuBtn.Size = new System.Drawing.Size(162, 50);
             this.dichVuBtn.TabIndex = 1;
             this.dichVuBtn.Text = "Dịch Vụ";
             this.dichVuBtn.UseVisualStyleBackColor = true;
@@ -239,10 +218,9 @@
             this.taiKhoanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taiKhoanBtn.ForeColor = System.Drawing.Color.White;
             this.taiKhoanBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.taiKhoanBtn.Location = new System.Drawing.Point(4, 451);
-            this.taiKhoanBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.taiKhoanBtn.Location = new System.Drawing.Point(3, 293);
             this.taiKhoanBtn.Name = "taiKhoanBtn";
-            this.taiKhoanBtn.Size = new System.Drawing.Size(238, 77);
+            this.taiKhoanBtn.Size = new System.Drawing.Size(159, 50);
             this.taiKhoanBtn.TabIndex = 0;
             this.taiKhoanBtn.Text = "Tài Khoản";
             this.taiKhoanBtn.UseVisualStyleBackColor = true;
@@ -256,26 +234,38 @@
             this.pnlMain.GradientAngle = 90F;
             this.pnlMain.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.pnlMain.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.pnlMain.Location = new System.Drawing.Point(236, 71);
+            this.pnlMain.Location = new System.Drawing.Point(157, 46);
+            this.pnlMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1462, 929);
+            this.pnlMain.Size = new System.Drawing.Size(975, 604);
             this.pnlMain.TabIndex = 7;
+            // 
+            // Heading
+            // 
+            this.Heading.Font = new System.Drawing.Font("HarmonyOS Sans Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Heading.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.Heading.Location = new System.Drawing.Point(233, 7);
+            this.Heading.Name = "Heading";
+            this.Heading.Size = new System.Drawing.Size(801, 23);
+            this.Heading.TabIndex = 5;
+            this.Heading.Text = "Danh Mục ";
+            this.Heading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1712, 1014);
+            this.ClientSize = new System.Drawing.Size(1141, 659);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlMenubar);
             this.Controls.Add(this.pnlMovable);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "fMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fMenu_FormClosing);
             this.pnlMovable.ResumeLayout(false);
             this.pnlMenubar.ResumeLayout(false);
