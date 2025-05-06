@@ -175,6 +175,18 @@
     <Compile Include="customcomponent\UcMayTinh.Designer.cs">
       <DependentUpon>UcMayTinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="fCTHDDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCTHDDV.Designer.cs">
+      <DependentUpon>fCTHDDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCTHDNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCTHDNT.Designer.cs">
+      <DependentUpon>fCTHDNT.cs</DependentUpon>
+    </Compile>
     <Compile Include="fDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +198,12 @@
     </Compile>
     <Compile Include="fDichVu.Designer.cs">
       <DependentUpon>fDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHoaDon.Designer.cs">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="fLK.cs">
       <SubType>Form</SubType>
@@ -249,11 +267,20 @@
     <EmbeddedResource Include="customcomponent\UcMayTinh.resx">
       <DependentUpon>UcMayTinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fCTHDDV.resx">
+      <DependentUpon>fCTHDDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCTHDNT.resx">
+      <DependentUpon>fCTHDNT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fDashBoard.resx">
       <DependentUpon>fDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fDichVu.resx">
       <DependentUpon>fDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHoaDon.resx">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fMenu.resx">
       <DependentUpon>fMenu.cs</DependentUpon>

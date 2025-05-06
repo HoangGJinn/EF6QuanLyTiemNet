@@ -155,7 +155,7 @@ namespace WF_QuanNet
 
         private void hoaDonBtn_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new fHoaDon(), sender as Button);
+            OpenChildForm(new fHoaDon(), sender as Button);
         }
 
         private void quitBtn_Click(object sender, EventArgs e)
