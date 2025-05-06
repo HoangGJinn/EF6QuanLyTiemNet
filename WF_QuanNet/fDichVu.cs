@@ -78,6 +78,7 @@ namespace WF_QuanNet
                 foreach (string extension in imageExtensions)
                 {
                     string tempPath = Path.Combine(Application.StartupPath, "Images", baseImageName + extension);
+
                     if (File.Exists(tempPath))
                     {
                         imagePath = tempPath;
