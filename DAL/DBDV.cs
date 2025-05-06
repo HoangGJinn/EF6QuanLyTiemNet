@@ -10,6 +10,7 @@ namespace DAL
     public class DBDichVu
     {
         private static DBDichVu instance;
+        
         public static DBDichVu Instance
         {
             get
@@ -22,12 +23,29 @@ namespace DAL
             }
         }
         private DBDichVu() { }
-        
+        public List<Top5DoAnItNhat> LayTop5DAIt()
+        {
+            List<Top5DoAnItNhat> list = new List<Top5DoAnItNhat>();
+            list = QuanLyTiemNetEntities.Instance.Top5DoAnItNhat.ToList();
+            return list;
+        }
+        public List<Top5DoUongItNhat> LayTop5DUIt()
+        {
+            List<Top5DoUongItNhat> list = new List<Top5DoUongItNhat>();
+            list = QuanLyTiemNetEntities.Instance.Top5DoUongItNhat.ToList();
+            return list;
+        }
         public List<View_DichVuDoAn> View_DichVuDoAns()
         {
             List<View_DichVuDoAn> list = new List<View_DichVuDoAn>();
             
             list = QuanLyTiemNetEntities.Instance.View_DichVuDoAn.ToList();
+            return list;
+        }
+        public List<Top5DoAn> LayTop5DA()
+        {
+            List<Top5DoAn> list = new List<Top5DoAn>();
+            list = QuanLyTiemNetEntities.Instance.Top5DoAn.ToList();
             return list;
         }
 
@@ -69,7 +87,12 @@ namespace DAL
                                             }).ToList();
             return list;
         }
-
+        public List<Top5DoUong> LayTop5DU()
+        {
+            List<Top5DoUong> list = new List<Top5DoUong>();
+            list = QuanLyTiemNetEntities.Instance.Top5DoUong.ToList();
+            return list;
+        }
         public List<View_DichVuTheCao> TimKiemDVTC(string query)
         {
             var x = QuanLyTiemNetEntities.Instance.fn_TimKiemDVTC(query).ToList();

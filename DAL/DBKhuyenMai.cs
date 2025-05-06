@@ -34,5 +34,40 @@ namespace DAL
                 throw ex;
             }
         }
+        public int SoKhuyenMaiSapHetHan(int soNgay)
+        {
+            try
+            {
+                DateTime currentDate = DateTime.Now;
+                DateTime targetDate = currentDate.AddDays(soNgay);
+
+                // Ensure QuanLyTiemNetEntities has a DbSet or property for KhuyenMais  
+                var khuyenMais = QuanLyTiemNetEntities.Instance.KHUYENMAIs
+                    .Where(km => km.ThoiGianBatDau <= targetDate && km.ThoiGianKetThuc >= currentDate)
+                    .ToList();
+
+                return khuyenMais.Count(); // Fix method invocation for Count  
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public int SoKMKhaDung()
+        {
+            try
+            {
+                DateTime currentDate = DateTime.Now;
+                // Ensure QuanLyTiemNetEntities has a DbSet or property for KhuyenMais  
+                var khuyenMais = QuanLyTiemNetEntities.Instance.KHUYENMAIs
+                    .Where(km => km.ThoiGianBatDau <= currentDate && km.ThoiGianKetThuc >= currentDate)
+                    .ToList();
+                return khuyenMais.Count(); // Fix method invocation for Count  
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
