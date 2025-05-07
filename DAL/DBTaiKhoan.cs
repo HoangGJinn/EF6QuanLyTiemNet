@@ -81,8 +81,20 @@ namespace DAL
         {
             try
             {
-                // Lấy giá trị đầu tiên hoặc 0 nếu không có kết quả
-                return QuanLyTiemNetEntities.Instance.fn_TKMoiTrongThang().FirstOrDefault();
+                int tkmoi = 0;
+                try
+                {
+                    tkmoi = QuanLyTiemNetEntities.Instance.TAIKHOANs.Where
+                        (tk => tk.NgayTao.Month == DateTime.Now.Month &&
+
+
+                        tk.NgayTao.Year == DateTime.Now.Year).Count();
+                }
+                catch (Exception ex)
+                {
+                    tkmoi = 0;
+                }
+                return tkmoi;
             }
             catch (Exception ex)
             {

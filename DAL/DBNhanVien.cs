@@ -27,11 +27,20 @@ namespace DAL
             list = QuanLyTiemNetEntities.Instance.DanhSachNhanViens.ToList();
             return list;
         }
-        public List<DanhSachNhanVien> TimNhanVien(string searchText)
+        public List<NHANVIEN> TimNhanVien(string searchText)
         {
-            List<DanhSachNhanVien> list = new List<DanhSachNhanVien>();
-            list = QuanLyTiemNetEntities.Instance.DanhSachNhanViens.Where(x => x.MaNV.ToString().Contains(searchText) || x.HoTen.Contains(searchText)).ToList();
-            return list;
+            List<NHANVIEN> listres = new List<NHANVIEN>();
+            List<DanhSachNhanVien> list = QuanLyTiemNetEntities.Instance.DanhSachNhanViens.Where(x => x.MaNV.ToString().Contains(searchText) || x.HoTen.Contains(searchText)).ToList();
+            listres = list.Select(x => new NHANVIEN
+            {
+                MaNV = x.MaNV,
+                HoTen = x.HoTen,
+                DiaChi = x.DiaChi,
+                SDT = x.SDT,
+                GioiTinh = x.GioiTinh,
+                NgaySinh = x.NgaySinh
+            }).ToList();
+            return listres;
         }
         public bool ThemNhanVien(NHANVIEN nv)
         {

@@ -125,7 +125,7 @@ namespace WF_QuanNet
 
         private void thongKeBtn_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new fDashBoard(), sender as Button);
+            OpenChildForm(new fDashBoard(), sender as Button);
         }
 
         private void mayTinhBtn_Click(object sender, EventArgs e)
@@ -150,12 +150,12 @@ namespace WF_QuanNet
 
         private void khuyenMaiBtn_Click(object sender, EventArgs e)
         {
-           // OpenChildForm(new fKhuyenMai(), sender as Button);
+           OpenChildForm(new fKhuyenMai(), sender as Button);
         }
 
         private void hoaDonBtn_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new fHoaDon(), sender as Button);
+            OpenChildForm(new fHoaDon(), sender as Button);
         }
 
         private void quitBtn_Click(object sender, EventArgs e)
