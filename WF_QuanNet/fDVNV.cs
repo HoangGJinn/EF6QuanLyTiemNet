@@ -361,6 +361,7 @@ namespace WF_QuanNet
             {
                 // Assuming DBNhanVien.LayNVDangNhap() returns List<proc_LayTTNVDangNhap_Result>
                 var nv = dbNV.LayNVDangNhap().FirstOrDefault();
+                //MessageBox.Show($"Mã NV là: {nv}");
                 if (nv != null)
                 {
                     maNv = nv.MaNV; // Access property

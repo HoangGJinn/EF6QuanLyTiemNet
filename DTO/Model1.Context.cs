@@ -72,7 +72,7 @@ namespace DTO
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi lấy thông tin người dùng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Lỗi khi lấy thông tin người dùng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
         }
