@@ -10,7 +10,7 @@ namespace DAL
     public class DBDichVu
     {
         private static DBDichVu instance;
-        
+
         public static DBDichVu Instance
         {
             get
@@ -38,7 +38,7 @@ namespace DAL
         public List<View_DichVuDoAn> View_DichVuDoAns()
         {
             List<View_DichVuDoAn> list = new List<View_DichVuDoAn>();
-            
+
             list = QuanLyTiemNetEntities.Instance.View_DichVuDoAn.ToList();
             return list;
         }
@@ -141,7 +141,33 @@ namespace DAL
             QuanLyTiemNetEntities.Instance.proc_SuaDVTheCao(maDV, loaiThe, menhGia);
         }
 
+        public void BatDauThue(string somay, string usn)
+        {
+            try
+            {
+                string tenDangNhapParam = string.IsNullOrEmpty(usn) ? null : usn;
+                string soMayParam = string.IsNullOrEmpty(somay) ? null : somay;
 
+                QuanLyTiemNetEntities.Instance.sp_BatDauSuDungMay(tenDangNhapParam, soMayParam);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public void KetThucThue(string somay, string usn)
+        {
+            try
+            {
+                string tenDangNhapParam = string.IsNullOrEmpty(usn) ? null : usn;
+                string soMayParam = string.IsNullOrEmpty(somay) ? null : somay;
 
+                QuanLyTiemNetEntities.Instance.sp_KetThucSuDungMay(tenDangNhapParam, soMayParam);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
