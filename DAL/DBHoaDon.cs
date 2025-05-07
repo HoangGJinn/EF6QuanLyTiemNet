@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Objects;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -78,5 +79,72 @@ namespace DAL
                 throw ex;
             }
         }
+
+        public void HoanTatHoaDon(string mahd)
+        {
+            try
+            {
+                QuanLyTiemNetEntities db = new QuanLyTiemNetEntities();
+                db.proc_HoanTatHD(mahd);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void HuyHoaDon(string mahd)
+        {
+            try
+            {
+                QuanLyTiemNetEntities db = new QuanLyTiemNetEntities();
+                db.proc_HuyHD(mahd);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public string TaoHoaDonDichVu(string PhuongThucTT, int MaNV, string MaKM, int TongThanhToan)
+        {
+            try
+            {
+
+                ObjectResult<string> result = QuanLyTiemNetEntities.Instance.proc_TaoHoaDonDichVu(PhuongThucTT, MaNV, string.IsNullOrEmpty(MaKM) ? null : MaKM, TongThanhToan);
+                string maHD = result.FirstOrDefault(); // Get the first (and likely only) result
+
+                if (!string.IsNullOrEmpty(maHD))
+                {
+                    return maHD;
+                }
+                else
+                {
+                    throw new Exception("Không thể tạo mã hóa đơn từ stored procedure.");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public void ThemDichVuVaoHoaDon(string MaHD, string MaDV, int DonGia, int SoLuong)
+        {
+            try
+            {
+
+                QuanLyTiemNetEntities.Instance.proc_ThemDichVuVaoHoaDon(MaHD, MaDV, DonGia, SoLuong);
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
     }
 }

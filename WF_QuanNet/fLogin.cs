@@ -59,12 +59,18 @@ namespace WF_QuanNet
                     f.ShowDialog();
                     this.Show();
                 }
+                else if(role == null)
+                {
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác");
+                    return;
+                }
                 else
                 {
-                    //fMenuNV f = new fMenuNV();
-                    //this.Hide();
-                    //f.ShowDialog();
-                    //this.Show();
+                    MessageBox.Show($"Vai trò là: {role}");
+                    fMenuNV f = new fMenuNV();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
                 }
             }
             catch (Exception ex)

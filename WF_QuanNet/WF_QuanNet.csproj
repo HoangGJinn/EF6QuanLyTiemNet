@@ -187,6 +187,12 @@
     <Compile Include="fCTHDNT.Designer.cs">
       <DependentUpon>fCTHDNT.cs</DependentUpon>
     </Compile>
+    <Compile Include="fDanhSachMay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDanhSachMay.Designer.cs">
+      <DependentUpon>fDanhSachMay.cs</DependentUpon>
+    </Compile>
     <Compile Include="fDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,12 @@
     </Compile>
     <Compile Include="fDichVu.Designer.cs">
       <DependentUpon>fDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDVNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDVNV.Designer.cs">
+      <DependentUpon>fDVNV.cs</DependentUpon>
     </Compile>
     <Compile Include="fHoaDon.cs">
       <SubType>Form</SubType>
@@ -235,6 +247,12 @@
     <Compile Include="fMenu.Designer.cs">
       <DependentUpon>fMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="fMenuNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMenuNV.Designer.cs">
+      <DependentUpon>fMenuNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="fNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +277,18 @@
     <Compile Include="fThemLM.Designer.cs">
       <DependentUpon>fThemLM.cs</DependentUpon>
     </Compile>
+    <Compile Include="fTTNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTTNhanVien.Designer.cs">
+      <DependentUpon>fTTNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fXNHDDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fXNHDDV.Designer.cs">
+      <DependentUpon>fXNHDDV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="customcomponent\CustomTextBox.resx">
@@ -279,11 +309,35 @@
     <EmbeddedResource Include="customcomponent\UcMayTinh.resx">
       <DependentUpon>UcMayTinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fLogin.resx">
-      <DependentUpon>fLogin.cs</DependentUpon>
+    <EmbeddedResource Include="fCTHDDV.resx">
+      <DependentUpon>fCTHDDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCTHDNT.resx">
+      <DependentUpon>fCTHDNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDanhSachMay.resx">
+      <DependentUpon>fDanhSachMay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDashBoard.resx">
+      <DependentUpon>fDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDichVu.resx">
+      <DependentUpon>fDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDVNV.resx">
+      <DependentUpon>fDVNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHoaDon.resx">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKhuyenMai.resx">
+      <DependentUpon>fKhuyenMai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fMenu.resx">
       <DependentUpon>fMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMenuNV.resx">
+      <DependentUpon>fMenuNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fNhanVien.resx">
       <DependentUpon>fNhanVien.cs</DependentUpon>
@@ -296,6 +350,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fThemLM.resx">
       <DependentUpon>fThemLM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTTNhanVien.resx">
+      <DependentUpon>fTTNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fXNHDDV.resx">
+      <DependentUpon>fXNHDDV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
