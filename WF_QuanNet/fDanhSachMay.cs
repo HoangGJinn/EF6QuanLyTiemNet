@@ -1,19 +1,18 @@
-﻿// using BusinessAcessLayer; // Remove this if you are using DAL directly
-using DTO; // Needed for DTOs
-using DAL; // Needed for DAL classes
+﻿using DTO; 
+using DAL; 
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data; // Keep if DataGridView related types are needed
+using System.Data; 
 using System.Drawing;
 using System.IO;
-using System.Linq; // Needed for Linq extensions (ToList, Select, FirstOrDefault, OrderBy)
+using System.Linq; 
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WF_QuanNet.customcomponent; // Ensure custom components namespace is correct
-using WF_QuanNet.CustomComponent; // Ensure custom components namespace is correct (Assuming UcMayTinh is here)
+using WF_QuanNet.customcomponent;
+using WF_QuanNet.CustomComponent;
 
 namespace WF_QuanNet
 {
@@ -21,7 +20,7 @@ namespace WF_QuanNet
     {
         private DBLM dblm;
         private DBMT dbmt;
-        private DBDichVu dbdv; // Assuming this instance is used for machine usage methods like KetThucThue/BatDauThue
+        private DBDichVu dbdv; 
 
         private Hashtable ucMays = new Hashtable();
 
@@ -30,7 +29,7 @@ namespace WF_QuanNet
             InitializeComponent();
             dblm = DBLM.Instance;
             dbmt = DBMT.Instance;
-            // Assuming DBDV is DBDichVu and has an Instance property
+
             dbdv = DBDichVu.Instance;
 
 
@@ -40,10 +39,10 @@ namespace WF_QuanNet
 
         private void Load_cbboxLoaiMay()
         {
-            List<DanhSachLoaiMay> loaiMayList = null; // Use specific DTO type
+            List<DanhSachLoaiMay> loaiMayList = null; 
             try
             {
-                loaiMayList = dblm.LayDsLoaiMay(); // Returns List<DanhSachLoaiMay>
+                loaiMayList = dblm.LayDsLoaiMay(); 
             }
             catch (Exception ex)
             {

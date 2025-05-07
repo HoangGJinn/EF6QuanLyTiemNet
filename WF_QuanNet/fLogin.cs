@@ -61,10 +61,10 @@ namespace WF_QuanNet
                 }
                 else
                 {
-                    //fMenuNV f = new fMenuNV();
-                    //this.Hide();
-                    //f.ShowDialog();
-                    //this.Show();
+                    fMenuNV f = new fMenuNV();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
                 }
             }
             catch (Exception ex)

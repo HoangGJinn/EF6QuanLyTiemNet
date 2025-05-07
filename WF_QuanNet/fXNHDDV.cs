@@ -160,7 +160,7 @@ namespace WF_QuanNet
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi hoàn tất hóa đơn: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                // dbHD.HuyHoaDon(maHD); // Uncomment if needed
+                dbHD.HuyHoaDon(maHD); // Uncomment if needed
             }
         }
 
