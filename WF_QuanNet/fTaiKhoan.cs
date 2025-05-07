@@ -272,7 +272,7 @@ namespace WF_QuanNet
                 suaTkBtn.Visible = true;
                 lmTkBtn.Visible = false;
                 huyTkBtn.Visible = true;
-                ntBtn.Visible = DBNhanVien.Instance.LayNVDangNhap().Count == 0 ? false : true;
+                ntBtn.Visible = DBNhanVien.Instance.LayNVDangNhap().Count > 0;
                 infoPnl.Visible = true;
                 if (dr.TrangThai == "Bị khóa")
                 {

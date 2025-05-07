@@ -8,9 +8,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DAL
-{
+{ 
+    /// <summary>
+    
     public class DBTaiKhoan
     {
+        public static string ConnectionString { get; set; }
         private static DBTaiKhoan instance;
         public static DBTaiKhoan Instance
         {
@@ -28,7 +31,7 @@ namespace DAL
             try
             {
                 string efConnectionString = DbHelper.BuildEntityConnectionString(usn, pss);
-
+                ConnectionString = efConnectionString;
                 using (var context = new QuanLyTiemNetEntities(efConnectionString))
                 {
                     var role = context.GetRoleFromUsername(usn);

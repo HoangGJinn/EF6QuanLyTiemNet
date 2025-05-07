@@ -15,10 +15,12 @@ namespace DTO
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     using System.Windows.Forms;
-
+    using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
+   
     public partial class QuanLyTiemNetEntities : DbContext
     {
         private static QuanLyTiemNetEntities instance;
+        private static string ConnectionString;
 
         // Property Instance (Singleton pattern)
         public static QuanLyTiemNetEntities Instance
@@ -26,7 +28,7 @@ namespace DTO
             get
             {
                 if (instance == null)
-                    instance = new QuanLyTiemNetEntities();
+                    instance = new QuanLyTiemNetEntities(ConnectionString);
                 return instance;
             }
             set
@@ -43,9 +45,14 @@ namespace DTO
 
         // Constructor cho phép truyền chuỗi kết nối động
         public QuanLyTiemNetEntities(string connectionString)
-            : base(connectionString)
+        : base(connectionString)
+
         {
+            ConnectionString = connectionString;
+
+
         }
+
 
         // Thực hiện việc truy vấn SP hoặc các thao tác trên DB ở đây
         // Ví dụ: Gọi Stored Procedure sp_helpuser

@@ -21,6 +21,7 @@ namespace DAL
             private set { instance = value; }
         }
         private DBNhanVien() { }
+
         public List<DanhSachNhanVien> LayDsNhanVien()
         {
             List<DanhSachNhanVien> list = new List<DanhSachNhanVien>();
