@@ -279,6 +279,9 @@
     <EmbeddedResource Include="customcomponent\UcMayTinh.resx">
       <DependentUpon>UcMayTinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fMenu.resx">
       <DependentUpon>fMenu.cs</DependentUpon>
     </EmbeddedResource>

@@ -50,10 +50,10 @@
             this.miniBtn.FlatAppearance.BorderSize = 0;
             this.miniBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.miniBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.miniBtn.Location = new System.Drawing.Point(1357, 0);
+            this.miniBtn.Location = new System.Drawing.Point(1206, 0);
             this.miniBtn.Margin = new System.Windows.Forms.Padding(0);
             this.miniBtn.Name = "miniBtn";
-            this.miniBtn.Size = new System.Drawing.Size(50, 55);
+            this.miniBtn.Size = new System.Drawing.Size(44, 44);
             this.miniBtn.TabIndex = 67;
             this.miniBtn.TabStop = false;
             this.miniBtn.UseVisualStyleBackColor = false;
@@ -66,10 +66,10 @@
             this.quitBtn.FlatAppearance.BorderSize = 0;
             this.quitBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             this.quitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.quitBtn.Location = new System.Drawing.Point(1406, 0);
+            this.quitBtn.Location = new System.Drawing.Point(1250, 0);
             this.quitBtn.Margin = new System.Windows.Forms.Padding(0);
             this.quitBtn.Name = "quitBtn";
-            this.quitBtn.Size = new System.Drawing.Size(50, 55);
+            this.quitBtn.Size = new System.Drawing.Size(44, 44);
             this.quitBtn.TabIndex = 68;
             this.quitBtn.TabStop = false;
             this.quitBtn.UseVisualStyleBackColor = false;
@@ -91,10 +91,9 @@
             this.customPanel1.GradientAngle = 90F;
             this.customPanel1.GradientBottomColor = System.Drawing.Color.White;
             this.customPanel1.GradientTopColor = System.Drawing.Color.White;
-            this.customPanel1.Location = new System.Drawing.Point(423, 138);
-            this.customPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.customPanel1.Location = new System.Drawing.Point(376, 110);
             this.customPanel1.Name = "customPanel1";
-            this.customPanel1.Size = new System.Drawing.Size(610, 702);
+            this.customPanel1.Size = new System.Drawing.Size(542, 562);
             this.customPanel1.TabIndex = 1;
             // 
             // showBtn
@@ -104,10 +103,9 @@
             this.showBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.showBtn.FlatAppearance.BorderSize = 0;
             this.showBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showBtn.Location = new System.Drawing.Point(470, 408);
-            this.showBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.showBtn.Location = new System.Drawing.Point(418, 326);
             this.showBtn.Name = "showBtn";
-            this.showBtn.Size = new System.Drawing.Size(36, 38);
+            this.showBtn.Size = new System.Drawing.Size(32, 30);
             this.showBtn.TabIndex = 0;
             this.showBtn.TabStop = false;
             this.showBtn.UseVisualStyleBackColor = false;
@@ -124,10 +122,9 @@
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(196, 511);
-            this.customButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.customButton1.Location = new System.Drawing.Point(174, 409);
             this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(219, 66);
+            this.customButton1.Size = new System.Drawing.Size(195, 53);
             this.customButton1.TabIndex = 3;
             this.customButton1.Text = "Đăng Nhập";
             this.customButton1.TextColor = System.Drawing.Color.White;
@@ -139,10 +136,9 @@
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BackgroundImage = global::WF_QuanNet.Properties.Resources.key1;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(104, 408);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(92, 326);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 38);
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.TabIndex = 66;
             this.pictureBox2.TabStop = false;
             // 
@@ -151,10 +147,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BackgroundImage = global::WF_QuanNet.Properties.Resources.user__5_;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(104, 288);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(92, 230);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 38);
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
             // 
@@ -164,9 +159,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.label1.Location = new System.Drawing.Point(116, 118);
+            this.label1.Location = new System.Drawing.Point(103, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(356, 53);
+            this.label1.Size = new System.Drawing.Size(297, 44);
             this.label1.TabIndex = 64;
             this.label1.Text = "Welcome Back!";
             // 
@@ -178,15 +173,15 @@
             this.passTxtBox.BorderRadius = 5;
             this.passTxtBox.BorderSize = 1;
             this.passTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.passTxtBox.Location = new System.Drawing.Point(93, 398);
-            this.passTxtBox.Margin = new System.Windows.Forms.Padding(6);
+            this.passTxtBox.Location = new System.Drawing.Point(83, 318);
+            this.passTxtBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.passTxtBox.Multiline = false;
             this.passTxtBox.Name = "passTxtBox";
-            this.passTxtBox.Padding = new System.Windows.Forms.Padding(56, 9, 56, 9);
+            this.passTxtBox.Padding = new System.Windows.Forms.Padding(50, 7, 50, 7);
             this.passTxtBox.PasswordChar = true;
             this.passTxtBox.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.passTxtBox.PlaceholderText = "Nhập mật khẩu";
-            this.passTxtBox.Size = new System.Drawing.Size(424, 51);
+            this.passTxtBox.Size = new System.Drawing.Size(377, 44);
             this.passTxtBox.TabIndex = 2;
             this.passTxtBox.Texts = "Taolao123";
             this.passTxtBox.UnderlinedStyle = false;
@@ -199,30 +194,32 @@
             this.usnTxtBox.BorderRadius = 5;
             this.usnTxtBox.BorderSize = 1;
             this.usnTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.usnTxtBox.Location = new System.Drawing.Point(92, 278);
-            this.usnTxtBox.Margin = new System.Windows.Forms.Padding(6);
+            this.usnTxtBox.Location = new System.Drawing.Point(82, 222);
+            this.usnTxtBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.usnTxtBox.Multiline = false;
             this.usnTxtBox.Name = "usnTxtBox";
-            this.usnTxtBox.Padding = new System.Windows.Forms.Padding(56, 9, 12, 9);
+            this.usnTxtBox.Padding = new System.Windows.Forms.Padding(50, 7, 11, 7);
             this.usnTxtBox.PasswordChar = false;
             this.usnTxtBox.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.usnTxtBox.PlaceholderText = "Nhập SĐT";
-            this.usnTxtBox.Size = new System.Drawing.Size(425, 51);
+            this.usnTxtBox.Size = new System.Drawing.Size(378, 44);
             this.usnTxtBox.TabIndex = 1;
             this.usnTxtBox.Texts = "0836713568";
             this.usnTxtBox.UnderlinedStyle = false;
             // 
             // fLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WF_QuanNet.Properties.Resources.loginpage;
-            this.ClientSize = new System.Drawing.Size(1456, 979);
+            this.ClientSize = new System.Drawing.Size(1294, 783);
             this.Controls.Add(this.miniBtn);
             this.Controls.Add(this.customPanel1);
             this.Controls.Add(this.quitBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fLogin";
             this.Load += new System.EventHandler(this.fLogin_Load);
             this.customPanel1.ResumeLayout(false);
