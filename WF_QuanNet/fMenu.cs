@@ -145,7 +145,7 @@ namespace WF_QuanNet
 
         private void dichVuBtn_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new fDichVu(), sender as Button);
+            //OpenChildForm(new fDichVu(), sender as Button);
         }
 
         private void khuyenMaiBtn_Click(object sender, EventArgs e)
