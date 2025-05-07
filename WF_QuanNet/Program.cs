@@ -16,7 +16,8 @@ namespace WF_QuanNet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fMenuNV());
+            //Application.Run(new fMenu());
+            Application.Run(new fLogin());
         }
     }
 }

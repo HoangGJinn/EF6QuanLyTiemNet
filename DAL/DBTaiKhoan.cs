@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAL
 {
@@ -22,7 +23,25 @@ namespace DAL
             private set { instance = value; }
         }
         private DBTaiKhoan() { }
+        public string BeginConnection(string usn, string pss)
+        {
+            try
+            {
+                string efConnectionString = DbHelper.BuildEntityConnectionString(usn, pss);
 
+                using (var context = new QuanLyTiemNetEntities(efConnectionString))
+                {
+                    var role = context.GetRoleFromUsername(usn);
+
+                    return role;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("5. Lỗi: " + ex.Message + "\n\nChi tiết:\n" + ex.StackTrace, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw new Exception("Lỗi khi kết nối đến cơ sở dữ liệu.", ex);
+            }
+        }
         public List<DanhSachTaiKhoan> LayDanhSachTaiKhoan()
         {
             List<DanhSachTaiKhoan> list = QuanLyTiemNetEntities.Instance.DanhSachTaiKhoans.ToList();

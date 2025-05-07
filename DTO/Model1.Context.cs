@@ -14,30 +14,76 @@ namespace DTO
     using System.Data.Entity.Infrastructure;
     using System.Data.Entity.Core.Objects;
     using System.Linq;
-    
+    using System.Windows.Forms;
+
     public partial class QuanLyTiemNetEntities : DbContext
     {
         private static QuanLyTiemNetEntities instance;
+
+        // Property Instance (Singleton pattern)
         public static QuanLyTiemNetEntities Instance
         {
             get
             {
-                if (instance == null) instance = new QuanLyTiemNetEntities();
+                if (instance == null)
+                    instance = new QuanLyTiemNetEntities();
                 return instance;
             }
             set
-            { instance = value; }
+            {
+                instance = value;
+            }
         }
+
+        // Constructor mặc định (sử dụng chuỗi kết nối trong App.config)
         public QuanLyTiemNetEntities()
             : base("name=QuanLyTiemNetEntities")
         {
         }
-    
+
+        // Constructor cho phép truyền chuỗi kết nối động
+        public QuanLyTiemNetEntities(string connectionString)
+            : base(connectionString)
+        {
+        }
+
+        // Thực hiện việc truy vấn SP hoặc các thao tác trên DB ở đây
+        // Ví dụ: Gọi Stored Procedure sp_helpuser
+        public class UserRole
+        {
+            public string UserName { get; set; }
+            public string RoleName { get; set; }
+        }
+
+        public string GetRoleFromUsername(string username)
+        {
+            try
+            {
+                var result = this.Database.SqlQuery<UserRole>(
+                    "EXEC sp_helpuser {0}", username).ToList();
+
+                if (result.Count > 0)
+                {
+                    var row = result[0];
+                    return row.RoleName ?? "Không xác định";
+                }
+
+                return "Không tìm thấy người dùng";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lấy thông tin người dùng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            // Giữ nguyên để tránh EF Code First can thiệp
             throw new UnintentionalCodeFirstException();
         }
-    
         public virtual DbSet<CHITIETDV> CHITIETDVs { get; set; }
         public virtual DbSet<DICHVU> DICHVUs { get; set; }
         public virtual DbSet<DVDOAN> DVDOANs { get; set; }

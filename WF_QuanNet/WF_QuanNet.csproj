@@ -229,6 +229,12 @@
     <Compile Include="fLK.Designer.cs">
       <DependentUpon>fLK.cs</DependentUpon>
     </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="fMayTinh.cs">
       <SubType>Form</SubType>
     </Compile>
